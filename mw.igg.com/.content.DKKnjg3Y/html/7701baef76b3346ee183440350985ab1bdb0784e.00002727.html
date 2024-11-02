@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Myth War Online</title>
+  <style type="text/css">
+  <!--
+  .fc1 {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #212121;
+  }
+  .fc3 {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #990000;
+        font-weight: bold;
+  }
+  .fc2 {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #FFFFFF;
+  }
+  .fc4 {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #6F7172;
+        font-weight: bold;
+  }
+  .fc5 {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #333399;
+  }
+  .m1 a:link {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #212121;
+        font-weight: bold;
+        text-decoration: none;
+  }
+  .m1 a:visited {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #212121;
+        font-weight: bold;
+        text-decoration: none;
+  }
+  .m1 a:hover {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #212121;
+        font-weight: bold;
+        text-decoration: none;
+  }
+  .m2 a:link {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: bold;
+  }
+  .m2 a:visited {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: bold;
+  }
+  .m2 a:hover {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: bold;
+  }
+  .m3 a:link {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #333333;
+        text-decoration: none;
+        font-weight: normal;
+  }
+  .m3 a:visited {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #333333;
+        text-decoration: none;
+        font-weight: normal;
+  }
+  .m3 a:hover {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #333333;
+        text-decoration: none;
+        font-weight: normal;
+  }
+  .m4 a:link {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #748CAE;
+        text-decoration: none;
+        font-weight: bold;
+  }
+  .m4 a:visited {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #748CAE;
+        text-decoration: none;
+        font-weight: bold;
+  }
+  .m4 a:hover {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #748CAE;
+        text-decoration: none;
+        font-weight: bold;}
+  .STYLE2 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold; }
+  -->
+  </style>
+  <script type="text/JavaScript">
+  <!--
+  function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+  }
+
+  function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+  }
+
+  function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+  }
+
+  function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+  }
+  //-->
+  </script>
+  <script language="javascript">
+
+  function NavOnClick(id){
+        var targetBox =document.all("itembox" + id);
+  if(targetBox.style.display=="none"){
+    targetBox.style.display = "block";
+   
+  }
+  else{
+    targetBox.style.display = "none";
+
+  }
+  }
+
+  </script>
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="MM_preloadImages('images/index2_08.jpg','images/index2_09.jpg','images/index2_10.jpg','images/index2_11.jpg','images/index2_12.jpg','images/index2_13.jpg')">
+  <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="1002">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td colspan="3">
+              <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="439">
+                    <a href="/"><img src="images/index1_01.jpg" width="439" height="182" border="0"></a>
+                  </td>
+                  <td>
+                    <a href="/"><img src="images/index1_02.jpg" width="563" height="182" border="0"></a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td width="147" valign="top" background="images/index_28.jpg"><img src="images/index1_03.jpg" width="147" height="194"></td>
+            <td width="694" valign="top">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td valign="top"><img src="images/index1_05.jpg" width="694" height="6"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="11"><img src="images/index_07.jpg" width="11" height="31" alt=""></td>
+                        <td width="81">
+                          <a href="index.php"><img src="images/index_08.jpg" alt="" name="Image1" width="81" height="31" border="0" id="Image1" onmouseover="MM_swapImage('Image1','','images/index2_08.jpg',1)" onmouseout="MM_swapImgRestore()"></a>
+                        </td>
+                        <td width="96">
+                          <a href="live_support.php"><img src="images/index_09.jpg" alt="" width="96" height="31" border="0" id="Image2" onmouseover="MM_swapImage('Image2','','images/index2_09.jpg',1)" onmouseout="MM_swapImgRestore()"></a>
+                        </td>
+                        <td width="113">
+                          <a href="mail.php"><img src="images/index_10.jpg" alt="" width="113" height="31" border="0" id="Image3" onmouseover="MM_swapImage('Image3','','images/index2_10.jpg',1)" onmouseout="MM_swapImgRestore()"></a>
+                        </td>
+                        <td width="139">
+                          <a href="forum.php"><img src="images/index_11.jpg" alt="" width="139" height="31" border="0" id="Image4" onmouseover="MM_swapImage('Image4','','images/index2_11.jpg',1)" onmouseout="MM_swapImgRestore()"></a>
+                        </td>
+                        <td width="119">
+                          <a href="account.php"><img src="images/index1_12.jpg" alt="" width="119" height="31" border="0" id="Image5" onmouseover="MM_swapImage('Image5','','images/index2_12.jpg',1)" onmouseout="MM_swapImgRestore()"></a>
+                        </td>
+                        <td width="126">
+                          <a href="gm.php"><img src="images/index_13.jpg" alt="" width="126" height="31" border="0" id="Image6" onmouseover="MM_swapImage('Image6','','images/index2_13.jpg',1)" onmouseout="MM_swapImgRestore()"></a>
+                        </td>
+                        <td><img src="images/index_14.jpg" width="9" height="31" alt=""></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">
+                    <table width="673" border="0" align="center" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td valign="top">
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td valign="top">&nbsp;</td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top">
+                          <table width="673" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td height="29" background="images/l_q.jpg">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td background="images/index_26.jpg">
+                                <table width="96%" border="0" align="center" cellpadding="0" cellspacing="5">
+                                  <tr>
+                                    <td valign="top">
+                                      <table width="100%" height="29" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                          <td width="15"><strong><img src="images/tu.jpg" width="9" height="9"></strong></td>
+                                          <td height="20" class="fc3">Game Info Related</td>
+                                        </tr>
+                                      </table>
+                                      <table width="100%" border="0" cellpadding="0" cellspacing="5" class="height22">
+                                        <tr>
+                                          <td height="23" align="left" class="fc4" style="color:#333333;cursor:hand; background-color:#FCEEFD; font-size:12px;" onclick="javascript:NavOnClick('101')">Q) Anti-hacked</td>
+                                        </tr>
+                                        <tr class="m1" id="itembox101" style="DISPLAY: none">
+                                          <td align="left" valign="top" class="fc4" style="color:#990000;">
+                                            A:
+                                            <p align="left"><font size="5"></font>&nbsp;</p>
+                                            <p align="left"><font size="5">Dear players,</font></p>
+                                            <p align="left"><font size="5">A small part of players have reported that their accounts had been stolen recently. And after deep investigation, we find most players who have their account stolen have underneath behaviors—using cheating program so that “trojan” applications for stealing account were installed on the computer; sharing account with others; neglecting of protecting the account information. The official hereby is providing suggestions to ensure the security of your account as follows:</font></p>
+                                            <p align="left"><font size="5">1. It is recommended not to use assistant software so-called with powerful functions while playing game. Once you use assistant software to play or so-called botter, the account name and password you enter will be very likely to be sent to a remote server（Not IGG server）. Then your account will be possible to be stolen anytime.</font></p>
+                                            <p align="left"><font size="5">2. It is recommended not to log into unofficial website or link that is not authorized by us. All official sites are under the domain name: www.igg.com, so be cautious when you login the non-official websites.</font></p>
+                                            <p align="left"><font size="5">3. The official will never ask players for account password or any other account information. Some players would use a username with “IGG or GM” as initial part to cheat in game. And once you reveal the account name and password to him/her, then your account will perhaps be stolen in short time. So please don’t reveal any account information to others.</font></p>
+                                            <p align="left"><font size="5">4. Players need to enter account name and password to log into the official forum. It is not the main reason that has account stolen. But don’t fill in the mail address used in registering game account on the forum to avoid hacker’s attack.</font></p>
+                                            <p align="left"><font size="5">5. Don’t reveal account information to others or share your account with others because it may bring unnecessary trouble or even make the account lost.</font></p>
+                                            <p align="left"><font size="5">6. Don’t download any software or so-called update game client that they are not in our official website.</font></p>
+                                            <p align="left"><font size="5">7. Don’t believe any mails that they are not from IGG.com. Some cheaters used so-called vip.com to cheat players’ account and password information.</font></p>
+                                            <p align="left"><font size="5">8. We strongly recommend you to purchase items from official item mall. The private real money trades are forbidden and easily deceived.</font></p>
+                                            <p align="left"><font size="5">9. For security reasons, the answers to password questions should be complex. Simple answers are easily guessed and result in the stealing of your account. If your account has been stolen, please link to http://www.igg.com/getpass.php</font></p>
+                                            <p align="left"><font size="5">The official has to remind players again not to reveal account information to others and lured by assistant program alleged with “powerful functions” to protect your own computer. Any assistant program used while playing game may bring unnecessary negative effect and even hidden trouble of account security!</font></p>
+                                            <p align="left"><font size="5"></font>&nbsp;</p>
+                                            <p align="left"><font size="5">Please look out for your account and resist cheating program in order to enjoy our games</font></p>
+                                            <p align="left"><font size="5"></font>&nbsp;</p>
+                                            <p align="left"><font size="5">We have been working hard all the time!</font></p>
+                                            <p align="left"><font size="5"></font>&nbsp;</p><br>
+                                            2008-07-22
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td height="23" align="left" class="fc4" style="color:#333333;cursor:hand; background-color:#FCEEFD; font-size:12px;" onclick="javascript:NavOnClick('100')">Q) Requirements to become VIP</td>
+                                        </tr>
+                                        <tr class="m1" id="itembox100" style="DISPLAY: none">
+                                          <td align="left" valign="top" class="fc4" style="color:#990000;">
+                                            A:
+                                            <p><strong>Requirements to become VIP</strong><br>
+                                            If you have bought 8000 points in Item Mall (including 8000 points) or bought 6000 points via Western Union at one time. You have no records of cheat in the game or any records of breaking the game rules.</p>
+                                            <p>After becoming VIP, you could enjoy the services as followed:<br>
+                                            1. &nbsp;You will have a chance to receive a special gift sent by IGG.<br>
+                                            2.&nbsp; You will receive the item Mall activities information at advance irregularly and make you always go ahead of others<br>
+                                            3.&nbsp; You have the right to talk with the VIP Commissioner on MSN directly and you have the priority to get your problem solved in the game.<br>
+                                            4.&nbsp; You will receive the heartfelt greetings on the festivals<br>
+                                            5. &nbsp;&nbsp;The valid time is one year that is, after one year, the right will be invalid automatically.<br>
+                                            6.&nbsp; &nbsp;During the year, you also have the chance to join the lottery to get some special gift in the game.<br>
+                                            7.&nbsp;&nbsp;&nbsp;You could regain the VIP qualification, however, it is based on the points you bought in the Item Mall last year are also up to 6000 points（including 6000 points）.<br>
+                                            8. &nbsp;&nbsp;You have the right to cancel our VIP service at any time.<br>
+                                            9.&nbsp;&nbsp;&nbsp; IGG also have the right to hold all kinds of the activities in the game and IGG reserves all rights to alter , intermit, or terminate some services.<br>
+                                            IGG guarantees that we will keep your personal information in secret except the situation below:<br>
+                                            A. be authorized by the party<br>
+                                            B. in order to keep the public interest<br>
+                                            C. in order to vindicate the legal interest of the IGG VIP<br>
+                                            Besides, you should also obey the game world rule and regulations. If we find any VIP cheats or disobeys the game rule, we also have the right to take action even cancel the VIP qualification or block the account.<br>
+                                            IGG, all rights reserved.</p>
+                                            <p>If you meet all the above mentioned requirement, you will receive an e-mail you a IGG Official Invitation Letter from&nbsp; <a href="mailto:IGGVIP@igg.com"><font color="#0000FF">IGGVIP@igg.com</font></a>&nbsp; <a href="mailto:IGGVIP@gmail.com"><font color="#0000FF">IGGVIP@gmail.com</font></a>. If you receive this letter, please reply as soon as possible.<br>
+                                            If you meet all the above mentioned requirement but do not receive our invitation letter, please contact our GM through Live Support and leave your IGG passport and paypal e-mail address. Thank you.</p><br>
+                                            2007-07-19
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td height="23" align="left" class="fc4" style="color:#333333;cursor:hand; background-color:#FCEEFD; font-size:12px;" onclick="javascript:NavOnClick('98')">Q) Attention！ New Super Power Pack</td>
+                                        </tr>
+                                        <tr class="m1" id="itembox98" style="DISPLAY: none">
+                                          <td align="left" valign="top" class="fc4" style="color:#990000;">
+                                            A:
+                                            <table cellspacing="3" cellpadding="0" width="96%" align="center" border="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td class="newsdatetext" align="middle" width="5%" height="26"><b>Attention！ New Super Power Pack</b></td>
+                                                </tr>
+                                                <tr>
+                                                  <td class="newsdatetext">
+                                                    <p>&nbsp;</p>
+                                                    <p><font face="Times New Roman" size="3">Dear players,</font></p>
+                                                    <p><font face="Times New Roman" size="3">In order to make you have more fun in game, official recommend a new Super Power Pack to you. The former power pack will be moved from shelf.</font></p>
+                                                    <p><br>
+                                                    <font size="3"><font face="Times New Roman">PACK : <strong><a href="/modules/item/powerpack2.php"><font color="#0000FF" size="4">Super Power Pack</font></a></strong></font></font></p>
+                                                    <p><font face="Times New Roman" size="3">Super Power Pack contains a pet egg and 4 other articles. When you redeem it from NPC, there should be at least 5 blanks in your inventory.</font></p>
+                                                    <p><font face="Times New Roman" size="3">Thanks for your attention and hope you will enjoy them!</font></p>
+                                                    <p><font face="Times New Roman" size="3"></font>&nbsp;</p>
+                                                    <p align="right"><font face="Times New Roman"><br>
+                                                    <font size="3"></font></font>&nbsp;</p>
+                                                    <p align="right"><font face="Times New Roman" size="3">Myth War Online Team, IGG</font><br></p>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td class="newsdatetext" align="right">2007-06-2</td>
+                                                </tr>
+                                              </tbody>
+                                            </table><br>
+                                            2007-06-27
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td height="23" align="left" class="fc4" style="color:#333333;cursor:hand; background-color:#FCEEFD; font-size:12px;" onclick="javascript:NavOnClick('97')">Q) PK Event Coming</td>
+                                        </tr>
+                                        <tr class="m1" id="itembox97" style="DISPLAY: none">
+                                          <td align="left" valign="top" class="fc4" style="color:#990000;">
+                                            A:
+                                            <table cellspacing="3" cellpadding="0" width="96%" align="center" border="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td class="newsdatetext" align="middle" width="5%" height="26"><b>PK Event Coming</b></td>
+                                                </tr>
+                                                <tr>
+                                                  <td class="newsdatetext">
+                                                    <p>&nbsp;</p>
+                                                    <p><font face="Times New Roman" size="3">Dear players,</font></p>
+                                                    <p><font face="Times New Roman" size="3">Do you have perfect skills? Do you have excellent equipment? Do you have super pets? Do you wait for a chance to show yourself? Do you want to prove you are the best player in MW? The chance is coming, please join our PK activity.</font></p><font size="+0"></font>
+                                                    <p><font size="+0"><br>
+                                                    <font face="Times New Roman" size="3"><strong><font color="#0000FF">Period:</font></strong> 2007.6.27——2007.6.30</font></font></p>
+                                                    <p><font size="+0"><br>
+                                                    <font face="Times New Roman" size="3"><strong><font color="#0000FF">Prize:</font></strong>&nbsp;&nbsp;&nbsp; Every participator will get one Shapeshifting Potion which can transforms you into a Ghost Warrior (Item level 3).<br>
+                                                    The party that enters 1/4 final will be rewarded two Trainer Device and one Super Bag of Renewal.<br>
+                                                    The party which enter the semifinal will be rewarded one bloodstone and one Shapeshifting Potion which can transforms you into a Mad Ogrewalker（item level 4）.<br>
+                                                    All champion party members will obtain item mall 200 points.</font></font></p>
+                                                    <p><font face="Times New Roman"><font size="3"><strong><font color="#0000FF">Content:</font></strong> All participators will be divided into two groups, LVL1 to LVL 104 for a group, LVL 1-1 to LVL1-104 for another group.<br>
+                                                    Each party should be just three persons. If you are interested, please come to forum event zone&nbsp;</font> <font size="3">to sign up,click <strong><a href="/forum/viewtopic.php?p=69892"><font size="5"><font color="#0000FF" size="4">here</font></font></a></strong> please. You have to provide your Server name, the three members'character name and also ID, level, leader.</font></font></p>
+                                                    <p><font face="Times New Roman" size="3"><strong><font color="#0000FF">Procedures：<br></font></strong>1. If you want to join, please be quick, because we only choose the first eight parties of LVL1 to LVL 104 group and, LVL 1-1 to LVL1-104 group each server to participate. The registration is from now to EST 0：00 June 28, 2007.</font></p>
+                                                    <p><font face="Times New Roman" size="3">2. We will sort out and announce the list of all the qualified parties and competition arrangements on June 28. Here, we should notice you pay close attention to competition arrangements on the forum if you have registered in case you miss the competition time.</font></p>
+                                                    <p><font face="Times New Roman" size="3">3. This competition will last three days from June 28 to June 30. The time is at 19:00 on each server. Please keep close eye on it. If you have registered but wouldn't present, you would be regarded as giving up and you couldn't obtain any rewards, moreover, your opponent would promote directly.</font></p>
+                                                    <p><font face="Times New Roman" size="3">4. All of the prizes will be given out after every match except the prizes for champion, the champion's prizes ( 200 item mall points) will be added into the winners'account before July 3rd.</font></p>
+                                                    <p><font face="Times New Roman" size="3">This activity is a tentative of IGG, so there are restrictions on the competition, only choose the first eight parties of each server to participate. Sorry for the inconvenience.<br></font><font face="Times New Roman" size="3"></font></p>
+                                                    <p><font face="Times New Roman" color="#FF0000" size="3"><strong>IGG rights reserved</strong></font></p>
+                                                    <p><font face="Times New Roman" size="3"></font>&nbsp;</p>
+                                                    <p><font face="Times New Roman" size="3"></font>&nbsp;</p>
+                                                    <p><font face="Times New Roman" size="3"></font>&nbsp;</p>
+                                                    <p align="right"><span lang="EN-US" style="FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 宋体; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA"><font face="Times New Roman"><span style="mso-spacerun: yes"><font size="3">&nbsp;</font></span>Mythwar Online Team, IGG</font></span></p>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td class="newsdatetext" align="right">2007-06-27</td>
+                                                </tr>
+                                              </tbody>
+                                            </table><br>
+                                            2007-06-27
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td height="23" align="left" class="fc4" style="color:#333333;cursor:hand; background-color:#FCEEFD; font-size:12px;" onclick="javascript:NavOnClick('96')">Q) GMS MAll</td>
+                                        </tr>
+                                        <tr class="m1" id="itembox96" style="DISPLAY: none">
+                                          <td align="left" valign="top" class="fc4" style="color:#990000;">
+                                            A:
+                                            <table cellspacing="3" cellpadding="0" width="96%" align="center" border="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td class="newsdatetext" align="middle" width="5%" height="26"><b>GMS MAll</b></td>
+                                                </tr>
+                                                <tr>
+                                                  <td class="newsdatetext">
+                                                    <p><br>
+                                                    <font face="Times New Roman" size="3">Dear Players,</font></p>
+                                                    <p><font face="Times New Roman" size="3">&nbsp;&nbsp;&nbsp; It is Shapeshifting Potion that makes MythWar more wonderful. Want to be larruping？Or to be more cute? Your wish can be achieved by using Shapeshifting potion. GM will sell a great variety of items. One and only purpose is to bring more fun to you all. Come and join to get the LIMITED Items.</font></p>
+                                                    <p><font face="Times New Roman" size="3">&nbsp;&nbsp;&nbsp; <strong><font color="#0000FF">Time</font></strong>：ET (GMT-5) 9:00-10:00AM&nbsp;&nbsp; 3:00-4:00PM&nbsp;&nbsp;&nbsp; 8:00-9:00 PM&nbsp; Saturday</font></p>
+                                                    <p><font face="Times New Roman" size="3">&nbsp;&nbsp;&nbsp; GMs will appear at the shop range at a designated time and sell some items (including item mall items). At the same time, the system will announce when the event begins. The item and price are as followed:<br></font></p>
+                                                    <p></p>
+                                                    <table cellspacing="0" cellpadding="0" border="1">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td valign="top" width="233">
+                                                            <p><font face="Times New Roman" size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Item</font></p>
+                                                          </td>
+                                                          <td valign="top" width="123">
+                                                            <p><font face="Times New Roman" size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; price</font></p>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td valign="top" width="233">
+                                                            <p><font face="Times New Roman" size="3">Musical Box</font></p>
+                                                          </td>
+                                                          <td valign="top" width="123">
+                                                            <p><font face="Times New Roman" size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 100K</font></p>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td valign="top" width="233">
+                                                            <p><font face="Times New Roman" size="3">Romantic Sparks</font></p>
+                                                          </td>
+                                                          <td valign="top" width="123">
+                                                            <p><font face="Times New Roman" size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 100K</font></p>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td valign="top" width="233">
+                                                            <p><font face="Times New Roman" size="3">Icy Crystal</font></p>
+                                                          </td>
+                                                          <td valign="top" width="123">
+                                                            <p><font face="Times New Roman" size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 800k</font></p>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td valign="top" width="233">
+                                                            <p><font face="Times New Roman" size="3">Shapeshifting Potion</font></p>
+                                                          </td>
+                                                          <td valign="top" width="123">
+                                                            <p><font face="Times New Roman" size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 Million</font></p>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td valign="top" width="233">
+                                                            <p><font face="Times New Roman" size="3">Stone of Curses&nbsp;</font></p>
+                                                          </td>
+                                                          <td valign="top" width="123">
+                                                            <p><font face="Times New Roman" size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5 Million</font></p>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td valign="top" width="233">
+                                                            <p><font face="Times New Roman" size="3">1.5 million Experience Mystical fruit</font></p>
+                                                          </td>
+                                                          <td valign="top" width="123">
+                                                            <p><font face="Times New Roman" size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.5 Million</font></p>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td valign="top" width="233">
+                                                            <p><font face="Times New Roman" size="3">Dragon Eye&nbsp;&nbsp;&nbsp;</font></p>
+                                                          </td>
+                                                          <td valign="top" width="123">
+                                                            <p><font face="Times New Roman" size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 35 Million</font></p>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                    <p></p>
+                                                    <p><font face="Times New Roman" size="3"></font>&nbsp;</p>
+                                                    <p><font face="Times New Roman" size="3">&nbsp;&nbsp;&nbsp; The more you buy, the more fun you get. ^-^</font></p>
+                                                    <p><font face="Times New Roman"><br>
+                                                    <font size="3"></font></font>&nbsp;</p>
+                                                    <p><font face="Times New Roman" size="3"></font>&nbsp;</p>
+                                                    <p align="right"><font face="Times New Roman" size="3">Mythwar Online Team, IGG</font><br></p>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td class="newsdatetext" align="right">2007-06-21</td>
+                                                </tr>
+                                              </tbody>
+                                            </table><br>
+                                            2007-06-22
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td height="23" align="left" class="fc4" style="color:#333333;cursor:hand; background-color:#FCEEFD; font-size:12px;" onclick="javascript:NavOnClick('95')">Q) Notice for Fortune Bombing</td>
+                                        </tr>
+                                        <tr class="m1" id="itembox95" style="DISPLAY: none">
+                                          <td align="left" valign="top" class="fc4" style="color:#990000;">
+                                            A:
+                                            <table cellspacing="3" cellpadding="0" width="96%" align="center" border="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td class="newsdatetext" align="middle" width="5%" height="26"><b>Notice for Fortune Bombing</b></td>
+                                                </tr>
+                                                <tr>
+                                                  <td class="newsdatetext">
+                                                    <p>&nbsp;</p>
+                                                    <p><font face="Times New Roman" size="3">Dear players,</font></p>
+                                                    <p><font face="Times New Roman" size="3">&nbsp;&nbsp;&nbsp;</font> <font size="+0"><font face="Times New Roman" size="3">The Fortune Bombing system error has been corrected. And the Integrals have been recharged into players'accounts too. If there is still any problem, please feel free to contact our GMs. Thanks for your understanding and support! Have fun!<br></font></font></p>
+                                                    <p><font face="Times New Roman" size="3"></font>&nbsp;</p>
+                                                    <p><font face="Times New Roman" size="3"></font>&nbsp;</p>
+                                                    <p align="right"><span lang="EN-US" style="FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 宋体; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA"><font size="3"><font face="Times New Roman"><span style="mso-spacerun: yes">&nbsp;&nbsp;</span> Myth War Online Team, IGG</font></font></span></p>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td class="newsdatetext" align="right">2007-06-20</td>
+                                                </tr>
+                                              </tbody>
+                                            </table><br>
+                                            2007-06-20
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td height="23" align="left" class="fc4" style="color:#333333;cursor:hand; background-color:#FCEEFD; font-size:12px;" onclick="javascript:NavOnClick('94')">Q) Account Security & Anti-cheat</td>
+                                        </tr>
+                                        <tr class="m1" id="itembox94" style="DISPLAY: none">
+                                          <td align="left" valign="top" class="fc4" style="color:#990000;">
+                                            A:
+                                            <table cellspacing="3" cellpadding="0" width="96%" align="center" border="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td class="newsdatetext">
+                                                    <p><font face="Times New Roman" size="3">Dear players,</font></p>
+                                                    <p><font face="Times New Roman" size="3">&nbsp;&nbsp;&nbsp; A small part of players have reported that their accounts had been stolen recently. And after deep investigation, we find most players who have their account stolen have underneath behaviors—using cheating program so that “<strong><font color="#FF0000">Trojan</font></strong>” applications for stealing account were installed on the computer; sharing account with others; neglecting of protecting the account information. The official hereby is providing suggestions to ensure the security of your account as follows:</font></p>
+                                                    <p><font face="Times New Roman" size="3">1. It is recommended not to use assistant software so-called with powerful functions while playing Mythwar. Once you use assistant software to play or so-called botter, the account name and password you enter will be very likely to be sent to a remote server（<strong><font color="#FF0000">Not igg server</font></strong>）. Then your account will be possible to be stolen anytime.</font></p>
+                                                    <p><font face="Times New Roman" size="3">2. It is recommended not to log into unofficial website or link that is not authorized by us. All official sites are under the domain name:</font> <a href="http://www.mythwaronline.com/"><font face="Times New Roman" color="#0000FF" size="3"><strong>www.mythwaronline.com</strong></font></a> <font face="Times New Roman" size="3">or</font> <a href="http://www.igg.com/"><font face="Times New Roman" color="#0000FF" size="3"><strong>www.igg.com</strong></font></a><font face="Times New Roman" size="3">, so be cautious when you login the non-official websites.</font></p>
+                                                    <p><font face="Times New Roman" size="3">3. The official will never ask players for account password or any other account information. Some players would use a username with “<strong><font color="#FF0000">IGG or GM</font></strong>” as initial part to cheat in game. And once you reveal the account name and password to him/her, then your account will perhaps be stolen in short time. So please don't reveal any account information to others.</font></p>
+                                                    <p><font face="Times New Roman" size="3">4. Players need to enter account name and password to log into the official forum. It is not the main reason that has account stolen. But don't fill in the mail address used in registering game account on the forum to avoid hacker's attack.</font></p>
+                                                    <p><font face="Times New Roman" size="3">5. Don't reveal account information to others or share your account with others because it may bring unnecessary trouble or even make the account lost.</font></p>
+                                                    <p><font face="Times New Roman" size="3">6. Don't download any software or so-called update game client that they are not in our official website.</font></p>
+                                                    <p><font face="Times New Roman" size="3">7. Don't accept the file from the stranger, since it may contain undiscovered virus which cause your account to be revealed.</font></p>
+                                                    <p><font face="Times New Roman" size="3">8. Don't believe any mails that they are not from igg.com. Some cheaters used so-called vip.com to cheat players'account and password information.</font></p>
+                                                    <p><font face="Times New Roman" size="3">9. We strongly recommend you to purchase items from official item mall. The private real money trades are forbidden and easily deceived.</font></p>
+                                                    <p><font face="Times New Roman" size="3">10. For security reasons, the answers to password questions should be complex. Simple answers are easily guessed and result in the stealing of your account. If your account has been stolen, please link to</font> <a href="http://www.igg.com/getpass.php"><font face="Times New Roman" color="#0000FF" size="4"><strong>here</strong></font></a>.</p>
+                                                    <p><br>
+                                                    <font face="Times New Roman" size="3">&nbsp;&nbsp;&nbsp; The official has to remind players again not to reveal account information to others and lured by assistant program alleged with “<strong><font color="#FF0000">powerful functions</font></strong>” to protect your own computer. Any assistant program used while playing Mythwar may bring unnecessary negative effect and even hidden trouble of account security!</font></p>
+                                                    <p><font face="Times New Roman" size="3">&nbsp;&nbsp;&nbsp; Please look out for your account and resist cheating program in order to enjoy Mythwar!</font></p>
+                                                    <p><font face="Times New Roman" size="3">&nbsp;&nbsp;&nbsp; We have been working hard all the time!</font></p>
+                                                    <p><br>
+                                                    &nbsp;</p>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td class="newsdatetext" align="right">2007-05-17</td>
+                                                </tr>
+                                              </tbody>
+                                            </table><br>
+                                            2007-06-13
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td height="23" align="left" class="fc4" style="color:#333333;cursor:hand; background-color:#FCEEFD; font-size:12px;" onclick="javascript:NavOnClick('90')">Q) Can I leave message if the other players are not online?</td>
+                                        </tr>
+                                        <tr class="m1" id="itembox90" style="DISPLAY: none">
+                                          <td align="left" valign="top" class="fc4" style="color:#990000;">A: <span lang="EN-US" style="FONT-SIZE: 10.5pt; COLOR: #ff9900; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 宋体; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA"><strong>Yes. Once the players go online he will be able to see the message.</strong></span><br>
+                                          2007-03-01</td>
+                                        </tr>
+                                        <tr>
+                                          <td height="23" align="left" class="fc4" style="color:#333333;cursor:hand; background-color:#FCEEFD; font-size:12px;" onclick="javascript:NavOnClick('89')">Q) How can I form or join a party?</td>
+                                        </tr>
+                                        <tr class="m1" id="itembox89" style="DISPLAY: none">
+                                          <td align="left" valign="top" class="fc4" style="color:#990000;">A: <span lang="EN-US" style="FONT-SIZE: 10.5pt; COLOR: #ff9900; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 宋体; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA"><strong>In order to form or join a party, a leader must first exist. If there is currently no leader, you can click on the party button to have yourself to become a leader for the team. To join a party, click the party button and select the leader and wait for approval. The short-cut key is “Alt+T”.</strong></span><br>
+                                          2007-03-01</td>
+                                        </tr>
+                                        <tr>
+                                          <td height="23" align="left" class="fc4" style="color:#333333;cursor:hand; background-color:#FCEEFD; font-size:12px;" onclick="javascript:NavOnClick('88')">Q) How can I select skills to use in attacks?</td>
+                                        </tr>
+                                        <tr class="m1" id="itembox88" style="DISPLAY: none">
+                                          <td align="left" valign="top" class="fc4" style="color:#990000;">A: <span lang="EN-US" style="FONT-SIZE: 10.5pt; COLOR: #ff9900; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 宋体; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA"><strong>During battles, click on Skill (open up skill list) and select the skill you want for attack and click on the enemy.</strong></span><br>
+                                          2007-03-01</td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img src="images/index_30.jpg" width="672" height="8" alt=""></td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                </tr>
+              </table>
+            </td>
+            <td width="161" valign="top" background="images/index_34.jpg"><img src="images/index1_06.jpg" width="161" height="433"></td>
+          </tr>
+          <tr>
+            <td colspan="3" valign="top">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="143">
+                    <div align="center"></div>
+                  </td>
+                  <td valign="top"><img src="images/di.jpg" width="703" height="16" alt=""></td>
+                  <td width="158">&nbsp;</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td valign="top">
+        <table width="100%" height="614" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td valign="top" background="images/di.gif">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="147">&nbsp;</td>
+            <td valign="top">&nbsp;</td>
+            <td width="161">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="1002">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="147" background="images/index_44.jpg">&nbsp;</td>
+            <td background="images/index_44.jpg">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td><img src="images/index_46.jpg" width="700" height="14" alt=""></td>
+                </tr>
+                <tr>
+                  <td background="images/index_48.jpg">
+                    <div align="center">
+                      <br>
+                      <span class="fc1">Copyright <span class="td2 STYLE1">&copy;</span> 2005-2006 Skyunion Co., Ltd , All Rights Reserved.</span><br>
+                      <br>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="images/index_49.jpg" width="700" height="13" alt=""></td>
+                </tr>
+              </table>
+            </td>
+            <td width="161" background="images/index_44.jpg">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+      <td background="images/index_44.jpg">&nbsp;</td>
+    </tr>
+  </table>
+</body>
+</html>

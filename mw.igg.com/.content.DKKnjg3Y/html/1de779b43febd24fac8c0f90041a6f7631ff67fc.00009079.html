@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>MythWar</title>
+  <style type="text/css">
+  <!--
+  *{ margin:0px top center; padding:0px;}
+  body { background:url(images/bg.jpg) #C10079 top center no-repeat;}
+  .STYLE1 {
+        font-size: x-large;
+        font-weight: bold;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        color: #D116BA;
+  }
+  -->
+  </style>
+  <script language="JavaScript">
+  function isNumberString (InString,RefString) {
+  if(InString.length==0) return (false);
+  for (Count=0; Count < InString.length; Count++) {
+        TempChar= InString.substring (Count, Count+1);
+        if (RefString.indexOf (TempChar, 0)==-1)
+        return (false);
+  }
+  return (true);
+  }
+
+  function query_get() {
+        var querystr = window.location.href.split("?");
+        return querystr[1];
+  }
+
+  var output_array = new Array("AnonymityA", "AnonymityB");
+  var gets = query_get();
+
+  if (gets.length > 0) {
+        var gets_array = gets.split("&");
+
+        for (var i=0; i<gets_array.length; i++) {
+                var getvar = gets_array[i].split('=');
+                //var output = "? " + getvar[0] + " 的值是 " + "\"" + getvar[1] + "\"<br>";
+                output_array[i] = getvar[1];
+                //document.write(output);
+        }
+  }
+  if (isNumberString(output_array[0],"abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ_0123456789")!=1) {
+        output_array[0] = "";
+  }
+  var output_a = output_array[0].toLowerCase();
+  if (output_a == "igg" || output_a == "gm" || output_a == "net" || output_a == "com" || output_a == "org") {
+        output_array[0] = "";
+  }
+
+  if (isNumberString(output_array[1],"abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ_0123456789")!=1) {
+        output_array[1] = "";
+  }
+  var output_b = output_array[1].toLowerCase();
+  if (output_b == "igg" || output_b == "gm" || output_b == "net" || output_b == "com" || output_b == "org") {
+        output_array[1] = "";
+  }
+  </script>
+</head>
+<body>
+  <table width="959" height="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td height="398" valign="top">
+        <a href="/index.php"><img src="images/bg.jpg" width="100%" height="398" border="0"></a>
+      </td>
+    </tr>
+    <tr>
+      <td bgcolor="#FED9FA">
+        <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td>
+              <p>Dear <strong>
+              <script>
+
+              document.write(output_array[1])
+              </script>:</strong></p>
+              <p align="center" class="STYLE1">Happy Valentine's Day</p>
+              <p align="center"><img src="index_clip_image001.gif" width="441" height="313"></p>
+              <p>On this special day, your dear friend <strong>
+              <script>
+
+              document.write(output_array[0])
+              </script></strong> asked the IGG Angel to give you a special gift. Have a look at it and enjoy!</p>
+              <p><strong>
+              <script>
+
+              document.write(output_array[1])
+              </script></strong>, Happy Valentine's Day! Ask the IGG Angel to bring some sweet chocolates to a dear friend.</p>
+              <div align="center" style="margin:0 auto;">
+                <div style="background-image:url(index_clip_image002.jpg); width:481px; height:350px;color:#000000; font-size:24px;">
+                  <p align="left" style="padding-top:240px; padding-left:8px; font-family:Tahoma">&nbsp;&nbsp; 
+                  <script>
+
+                  document.write(output_array[1])
+                  </script>,</p>
+                </div>
+              </div>
+              <p>&nbsp;</p>
+              <p>1. Enter your first name and your friend's first name, and then click 'obtain wish link'</p>
+              <form name="newinfo_form" action="valentine.html" method="get" id="newinfo_form">
+                Your Name: <input id="your_name" maxlength="10" size="16" name="your_name"> Your Friend's Name: <input id="your_friend_s_name" maxlength="10" size="16" name="your_friend_s_name"> <input tabindex="2" type="submit" value="obtain wish link" forwarding="" address="">
+              </form>
+              <p>2. You can copy and paste the following link to your friend's MSN/AIM/ICQ so as to send your best wishes to them.<br>
+              <br>
+              <font size="4"><em><u><strong>
+              <script language="JavaScript">
+
+              document.write(document.location.href);
+              </script></strong></u></em></font></p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td height="231" background="images/foot.png"></td>
+    </tr>
+  </table>
+</body>
+</html>

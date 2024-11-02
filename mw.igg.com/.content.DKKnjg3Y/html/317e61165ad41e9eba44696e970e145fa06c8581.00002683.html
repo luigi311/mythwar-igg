@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Myth War Online</title>
+  <style type="text/css">
+  <!--
+  .fc1 {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #212121;
+    text-decoration: none;
+  }
+  .fc3 {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #353D44;
+        font-weight: bold;
+  }
+  .fc2 {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #FFFFFF;
+  }
+  .fc4 {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #6F7172;
+        font-weight: bold;
+  }
+  .fc5 {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #333399;
+  }
+  .m1 a:link {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #212121;
+        font-weight: bold;
+        text-decoration: none;
+  }
+  .m1 a:visited {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #212121;
+        font-weight: bold;
+        text-decoration: none;
+  }
+  .m1 a:hover {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #212121;
+        font-weight: bold;
+        text-decoration: none;
+  }
+  .m2 a:link {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: bold;
+  }
+  .m2 a:visited {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: bold;
+  }
+  .m2 a:hover {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: bold;
+  }
+  .m3 a:link {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #333333;
+        text-decoration: none;
+        font-weight: normal;
+  }
+  .m3 a:visited {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #333333;
+        text-decoration: none;
+        font-weight: normal;
+  }
+  .m3 a:hover {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #333333;
+        text-decoration: none;
+        font-weight: normal;
+  }
+  .m4 a:link {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #748CAE;
+        text-decoration: none;
+        font-weight: bold;
+  }
+  .m4 a:visited {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #748CAE;
+        text-decoration: none;
+        font-weight: bold;
+  }
+  .m4 a:hover {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #748CAE;
+        text-decoration: none;
+        font-weight: bold;}
+  .STYLE2 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold; }
+  .fc31 { font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #990000;
+        text-decoration: none;
+        font-weight: bold;
+    
+  }
+  -->
+  </style>
+  <script type="text/JavaScript">
+  <!--
+  function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+  }
+
+  function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+  }
+
+  function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+  }
+
+  function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+  }
+  //-->
+  </script>
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="MM_preloadImages('images/index2_08.jpg','images/index2_09.jpg','images/index2_10.jpg','images/index2_11.jpg','images/index2_12.jpg','images/index2_13.jpg')">
+  <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="1002">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td colspan="3">
+              <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="439">
+                    <a href="/"><img src="images/index1_01.jpg" width="439" height="182" border="0"></a>
+                  </td>
+                  <td>
+                    <a href="/"><img src="images/index1_02.jpg" width="563" height="182" border="0"></a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td width="147" valign="top" background="images/index_28.jpg"><img src="images/index1_03.jpg" width="147" height="194"></td>
+            <td width="694" valign="top">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td valign="top"><img src="images/index1_05.jpg" width="694" height="6"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="11"><img src="images/index_07.jpg" width="11" height="31" alt=""></td>
+                        <td width="81">
+                          <a href="index.php"><img src="images/index_08.jpg" alt="" name="Image1" width="81" height="31" border="0" id="Image1" onmouseover="MM_swapImage('Image1','','images/index2_08.jpg',1)" onmouseout="MM_swapImgRestore()"></a>
+                        </td>
+                        <td width="96">
+                          <a href="live_support.php"><img src="images/index_09.jpg" alt="" width="96" height="31" border="0" id="Image2" onmouseover="MM_swapImage('Image2','','images/index2_09.jpg',1)" onmouseout="MM_swapImgRestore()"></a>
+                        </td>
+                        <td width="113">
+                          <a href="mail.php"><img src="images/index_10.jpg" alt="" width="113" height="31" border="0" id="Image3" onmouseover="MM_swapImage('Image3','','images/index2_10.jpg',1)" onmouseout="MM_swapImgRestore()"></a>
+                        </td>
+                        <td width="139">
+                          <a href="forum.php"><img src="images/index_11.jpg" alt="" width="139" height="31" border="0" id="Image4" onmouseover="MM_swapImage('Image4','','images/index2_11.jpg',1)" onmouseout="MM_swapImgRestore()"></a>
+                        </td>
+                        <td width="119">
+                          <a href="account.php"><img src="images/index1_12.jpg" alt="" width="119" height="31" border="0" id="Image5" onmouseover="MM_swapImage('Image5','','images/index2_12.jpg',1)" onmouseout="MM_swapImgRestore()"></a>
+                        </td>
+                        <td width="126">
+                          <a href="gm.php"><img src="images/index_13.jpg" alt="" width="126" height="31" border="0" id="Image6" onmouseover="MM_swapImage('Image6','','images/index2_13.jpg',1)" onmouseout="MM_swapImgRestore()"></a>
+                        </td>
+                        <td><img src="images/index_14.jpg" width="9" height="31" alt=""></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td>&nbsp;</td>
+                      </tr>
+                    </table>
+                    <table width="673" border="0" align="center" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td valign="top">
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                  <tr>
+                                    <td><img src="images/index1_17.jpg" width="674" height="10"></td>
+                                  </tr>
+                                  <tr>
+                                    <td background="images/index1_04.jpg">
+                                      <table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                          <td width="400" valign="top">
+                                            <table width="356" border="0" cellspacing="0" cellpadding="0">
+                                              <tr>
+                                                <td><img src="images/index1_20.jpg" width="356" height="36"></td>
+                                              </tr>
+                                              <tr>
+                                                <td height="5"></td>
+                                              </tr>
+                                            </table>
+                                            <table width="356" height="22" border="0" cellpadding="2" cellspacing="2">
+                                              <tr>
+                                                <td width="266">
+                                                  <a href="l_q_list.php"><span class="fc3">Anti-hacked</span></a>
+                                                </td>
+                                                <td width="90"><span class="fc1">2008-07-22</span></td>
+                                              </tr>
+                                              <tr>
+                                                <td width="266">
+                                                  <a href="l_q_list.php"><span class="fc3">Requirements to become VIP</span></a>
+                                                </td>
+                                                <td width="90"><span class="fc1">2007-07-19</span></td>
+                                              </tr>
+                                              <tr>
+                                                <td width="266">
+                                                  <a href="l_q_list.php"><span class="fc3">Attention！ New Super Power Pack</span></a>
+                                                </td>
+                                                <td width="90"><span class="fc1">2007-06-27</span></td>
+                                              </tr>
+                                              <tr>
+                                                <td width="266">
+                                                  <a href="l_q_list.php"><span class="fc3">PK Event Coming</span></a>
+                                                </td>
+                                                <td width="90"><span class="fc1">2007-06-27</span></td>
+                                              </tr>
+                                              <tr>
+                                                <td width="266">
+                                                  <a href="l_q_list.php"><span class="fc3">GMS MAll</span></a>
+                                                </td>
+                                                <td width="90"><span class="fc1">2007-06-22</span></td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td valign="top">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                              <tr>
+                                                <td width="277"><img src="images/index1_22.jpg" width="277" height="44"></td>
+                                              </tr>
+                                              <tr>
+                                                <td height="144" valign="top" background="images/index1_25.jpg">
+                                                  <table width="96%" border="0" align="center" cellpadding="5" cellspacing="0">
+                                                    <tr>
+                                                      <td height="136" align="center" valign="top">
+                                                        <marquee scrollamount="1" scrolldelay="100" direction="up" onmouseout="this.start()" onmouseover="this.stop()" height="120"></marquee>
+                                                        <table width="260" border="0" cellspacing="1" cellpadding="1">
+                                                          <tr>
+                                                            <td>
+                                                              <div align="center">
+                                                                <span class="fc3">June 30th</span>
+                                                              </div>
+                                                            </td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>
+                                                              <span class="fc1"></span>
+                                                              <p><span class="fc1">Welcome to MWO Customer Service Center, if you have any question, please always feel free to ask!</span></p>
+                                                              <p><span class="fc1">&nbsp;</span></p>
+                                                            </td>
+                                                          </tr>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td><img src="images/index1_28.jpg" width="674" height="11"></td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>&nbsp;</td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top">
+                          <table width="673" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td height="29"><img src="images/faq.jpg" width="671" height="31"></td>
+                            </tr>
+                            <tr>
+                              <td valign="top" background="images/index_26.jpg">
+                                <table width="96%" border="0" align="center" cellpadding="0" cellspacing="5">
+                                  <tr>
+                                    <td height="30">
+                                      <img src="images/tu.jpg" width="9" height="9"><a href="p_r.php" class="fc31">Program Relate</a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td height="28">
+                                      <table width="100%" border="0" cellpadding="0" cellspacing="3">
+                                        <tr>
+                                          <td>
+                                            <a href="p_r.php" class="fc1">Q) If during downloading or updating of Myth War client, a disconnection occurs, what can I do?</a>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <a href="p_r.php" class="fc1">Q) If during downloading or updating of Myth War client, there is insufficient hard disk space, what can I do?</a>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <a href="p_r.php" class="fc1">Q) I have other applications running while running Myth War, will this affect the game stability in anyway?</a>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <a href="p_r.php" class="fc1">Q) After installation, I can only hear the sound but cannot see the pictures, what can I do?</a>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <a href="p_r.php" class="fc1">Q) Which server should I choose to play in?</a>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td height="28">
+                                      <span class="fc31"><strong><img src="images/tu.jpg" width="9" height="9"></strong></span> <a href="o_r.php" class="fc31">Operation Related</a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td height="28">
+                                      <table width="100%" border="0" cellpadding="0" cellspacing="3">
+                                        <tr>
+                                          <td>
+                                            <a href="o_r.php" class="fc1">Q How can I create a character?</a>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <a href="o_r.php" class="fc1">Q) Can I use symbols when naming the characters?</a>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <a href="o_r.php" class="fc1">Q) Can we change the name of in-game characters?</a>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <a href="o_r.php" class="fc1">Q) Are there any restrictions on how many alphabets can be used to name the characters?</a>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <a href="o_r.php" class="fc1">Q) How many characters can we create with one account?</a>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td height="28">
+                                      <span class="fc31"><strong><img src="images/tu.jpg" width="9" height="9"></strong></span> <a href="g_i_r.php" class="fc31">Game Info Related</a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td height="28">
+                                      <table width="100%" border="0" cellpadding="0" cellspacing="3">
+                                        <tr>
+                                          <td class="fc1">
+                                            <a href="g_i_r.php" class="fc1">Q) How to redeem the first pet?</a>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td class="fc1">
+                                            <a href="g_i_r.php" class="fc1">Q) Is it normal for a pet to level up faster than the main character?</a>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td class="fc1">
+                                            <a href="g_i_r.php" class="fc1">Q) How many pets can a character keep?</a>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td class="fc1">
+                                            <a href="g_i_r.php" class="fc1">Q) How many races/classes are there?</a>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td class="fc1">
+                                            <a href="g_i_r.php" class="fc1">Q) After death, where will the character go?</a>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img src="images/index_30.jpg" width="672" height="8" alt=""></td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                </tr>
+              </table>
+            </td>
+            <td width="161" valign="top" background="images/index_34.jpg"><img src="images/index1_06.jpg" width="161" height="433"></td>
+          </tr>
+          <tr>
+            <td colspan="3" valign="top">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="143">
+                    <div align="center"></div>
+                  </td>
+                  <td valign="top"><img src="images/di.jpg" width="703" height="16" alt=""></td>
+                  <td width="158">&nbsp;</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td background="images/di.gif">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="147">&nbsp;</td>
+            <td valign="top">&nbsp;</td>
+            <td width="161">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="1002">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="147" background="images/index_44.jpg">&nbsp;</td>
+            <td background="images/index_44.jpg">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td><img src="images/index_46.jpg" width="700" height="14" alt=""></td>
+                </tr>
+                <tr>
+                  <td background="images/index_48.jpg">
+                    <div align="center">
+                      <br>
+                      <span class="fc1">Copyright <span class="td2 STYLE1">&copy;</span> 2005-2006 Skyunion Co., Ltd , All Rights Reserved.</span><br>
+                      <br>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="images/index_49.jpg" width="700" height="13" alt=""></td>
+                </tr>
+              </table>
+            </td>
+            <td width="161" background="images/index_44.jpg">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+      <td background="images/index_44.jpg">&nbsp;</td>
+    </tr>
+  </table>
+</body>
+</html>

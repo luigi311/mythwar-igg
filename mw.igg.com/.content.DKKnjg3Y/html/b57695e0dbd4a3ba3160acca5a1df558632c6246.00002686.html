@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Myth War Online</title>
+  <style type="text/css">
+  <!--
+  .fc1 {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #212121;
+  }
+  .fc3 {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #990000;
+        font-weight: bold;
+  }
+  .fc2 {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #FFFFFF;
+  }
+  .fc4 {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #6F7172;
+        font-weight: bold;
+  }
+  .fc5 {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #333399;
+  }
+  .m1 a:link {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #212121;
+        font-weight: bold;
+        text-decoration: none;
+  }
+  .m1 a:visited {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #212121;
+        font-weight: bold;
+        text-decoration: none;
+  }
+  .m1 a:hover {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #212121;
+        font-weight: bold;
+        text-decoration: none;
+  }
+  .m2 a:link {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: bold;
+  }
+  .m2 a:visited {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: bold;
+  }
+  .m2 a:hover {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: bold;
+  }
+  .m3 a:link {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #333333;
+        text-decoration: none;
+        font-weight: normal;
+  }
+  .m3 a:visited {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #333333;
+        text-decoration: none;
+        font-weight: normal;
+  }
+  .m3 a:hover {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #333333;
+        text-decoration: none;
+        font-weight: normal;
+  }
+  .m4 a:link {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #748CAE;
+        text-decoration: none;
+        font-weight: bold;
+  }
+  .m4 a:visited {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #748CAE;
+        text-decoration: none;
+        font-weight: bold;
+  }
+  .m4 a:hover {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #748CAE;
+        text-decoration: none;
+        font-weight: bold;}
+  .STYLE2 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold; }
+  -->
+  </style>
+  <script type="text/JavaScript">
+  <!--
+  function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+  }
+
+  function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+  }
+
+  function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+  }
+
+  function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+  }
+  //-->
+  </script>
+  <script language="javascript">
+
+  function NavOnClick(id){
+        var targetBox =document.all("itembox" + id);
+  if(targetBox.style.display=="none"){
+    targetBox.style.display = "block";
+   
+  }
+  else{
+    targetBox.style.display = "none";
+
+  }
+  }
+
+  </script>
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="MM_preloadImages('images/index2_08.jpg','images/index2_09.jpg','images/index2_10.jpg','images/index2_11.jpg','images/index2_12.jpg','images/index2_13.jpg')">
+  <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="1002">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td colspan="3">
+              <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="439">
+                    <a href="/"><img src="images/index1_01.jpg" width="439" height="182" border="0"></a>
+                  </td>
+                  <td>
+                    <a href="/"><img src="images/index1_02.jpg" width="563" height="182" border="0"></a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td width="147" valign="top" background="images/index_28.jpg"><img src="images/index1_03.jpg" width="147" height="194"></td>
+            <td width="694" valign="top">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td valign="top"><img src="images/index1_05.jpg" width="694" height="6"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="11"><img src="images/index_07.jpg" width="11" height="31" alt=""></td>
+                        <td width="81">
+                          <a href="index.php"><img src="images/index_08.jpg" alt="" name="Image1" width="81" height="31" border="0" id="Image1" onmouseover="MM_swapImage('Image1','','images/index2_08.jpg',1)" onmouseout="MM_swapImgRestore()"></a>
+                        </td>
+                        <td width="96">
+                          <a href="live_support.php"><img src="images/index_09.jpg" alt="" width="96" height="31" border="0" id="Image2" onmouseover="MM_swapImage('Image2','','images/index2_09.jpg',1)" onmouseout="MM_swapImgRestore()"></a>
+                        </td>
+                        <td width="113">
+                          <a href="mail.php"><img src="images/index_10.jpg" alt="" width="113" height="31" border="0" id="Image3" onmouseover="MM_swapImage('Image3','','images/index2_10.jpg',1)" onmouseout="MM_swapImgRestore()"></a>
+                        </td>
+                        <td width="139">
+                          <a href="forum.php"><img src="images/index_11.jpg" alt="" width="139" height="31" border="0" id="Image4" onmouseover="MM_swapImage('Image4','','images/index2_11.jpg',1)" onmouseout="MM_swapImgRestore()"></a>
+                        </td>
+                        <td width="119">
+                          <a href="account.php"><img src="images/index1_12.jpg" alt="" width="119" height="31" border="0" id="Image5" onmouseover="MM_swapImage('Image5','','images/index2_12.jpg',1)" onmouseout="MM_swapImgRestore()"></a>
+                        </td>
+                        <td width="126">
+                          <a href="gm.php"><img src="images/index_13.jpg" alt="" width="126" height="31" border="0" id="Image6" onmouseover="MM_swapImage('Image6','','images/index2_13.jpg',1)" onmouseout="MM_swapImgRestore()"></a>
+                        </td>
+                        <td><img src="images/index_14.jpg" width="9" height="31" alt=""></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">
+                    <table width="673" border="0" align="center" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td valign="top">
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td valign="top">&nbsp;</td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top">
+                          <table width="673" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td height="29" background="images/faq.jpg">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td background="images/index_26.jpg">
+                                <table width="96%" border="0" align="center" cellpadding="0" cellspacing="5">
+                                  <tr>
+                                    <td valign="top">
+                                      <table width="100%" height="29" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                          <td width="15"><strong><img src="images/tu.jpg" width="9" height="9"></strong></td>
+                                          <td height="20" class="fc3">Game Info Related</td>
+                                        </tr>
+                                      </table>
+                                      <table width="100%" border="0" cellpadding="0" cellspacing="5" class="height22">
+                                        <tr>
+                                          <td height="23" align="left" class="fc4" style="color:#333333;cursor:hand; background-color:#FCEEFD; font-size:12px;" onclick="javascript:NavOnClick('86')">Q) How to redeem the first pet?</td>
+                                        </tr>
+                                        <tr class="m1" id="itembox86" style="DISPLAY: none">
+                                          <td align="left" valign="top" class="fc4" style="color:#990000;">A: <span lang="EN-US" style="FONT-SIZE: 10.5pt; COLOR: #3366ff; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 宋体; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-bidi-font-size: 12.0pt"><strong>In sky passage find the pet redemption NPC. Talk to the NPC and he will randomly give you a pet. If you are not satisfied with the given pet you are able to release the pet and re-pick until you are satisfied with the given pet.</strong></span><br>
+                                          2007-02-28</td>
+                                        </tr>
+                                        <tr>
+                                          <td height="23" align="left" class="fc4" style="color:#333333;cursor:hand; background-color:#FCEEFD; font-size:12px;" onclick="javascript:NavOnClick('85')">Q) Is it normal for a pet to level up faster than the main character?</td>
+                                        </tr>
+                                        <tr class="m1" id="itembox85" style="DISPLAY: none">
+                                          <td align="left" valign="top" class="fc4" style="color:#990000;">A: <span lang="EN-US" style="FONT-SIZE: 10.5pt; COLOR: #3366ff; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 宋体; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-bidi-font-size: 12.0pt"><strong>Yes, this is very normal, as the main character is allowed to keep a few pets. Pets will always be able to level up faster than the main character.</strong></span><br>
+                                          2007-02-28</td>
+                                        </tr>
+                                        <tr>
+                                          <td height="23" align="left" class="fc4" style="color:#333333;cursor:hand; background-color:#FCEEFD; font-size:12px;" onclick="javascript:NavOnClick('84')">Q) How many pets can a character keep?</td>
+                                        </tr>
+                                        <tr class="m1" id="itembox84" style="DISPLAY: none">
+                                          <td align="left" valign="top" class="fc4" style="color:#990000;">A: <span lang="EN-US" style="FONT-SIZE: 10.5pt; COLOR: #3366ff; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 宋体; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-bidi-font-size: 12.0pt"><strong>Every main character can keep up to 8 pets and there will be an increment of 3 pets after every reincarnation. The advantages of keeping multiple pets are: a) being able to use different pets for different battles; b) being able to trade your pets with other players.</strong></span><br>
+                                          2007-02-28</td>
+                                        </tr>
+                                        <tr>
+                                          <td height="23" align="left" class="fc4" style="color:#333333;cursor:hand; background-color:#FCEEFD; font-size:12px;" onclick="javascript:NavOnClick('83')">Q) How many races/classes are there?</td>
+                                        </tr>
+                                        <tr class="m1" id="itembox83" style="DISPLAY: none">
+                                          <td align="left" valign="top" class="fc4" style="color:#990000;">A: <span lang="EN-US" style="FONT-SIZE: 10.5pt; COLOR: #3366ff; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 宋体; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-bidi-font-size: 12.0pt"><strong>There are 4 main classes.<br>
+                                          Human: Humans possess the deadliest physical attack skills.<br>
+                                          Male Human: Wanderer.<br>
+                                          Female: Thief.<br>
+                                          Centaur: Centaurs possess superb ability and arrow attack skills.<br>
+                                          Male: Archery.<br>
+                                          Female: Healer.<br>
+                                          Mage: Mages mainly use magical attacks as their form of offense.<br>
+                                          Male: Wizard.<br>
+                                          Female: Witch.<br>
+                                          Cyborg: Their vast knowledge of technology is their main form of power.<br>
+                                          Male: Destroyer.<br>
+                                          Female: Destroyer.</strong><br style="mso-special-character: line-break">
+                                          <br style="mso-special-character: line-break"></span><br>
+                                          2007-02-28</td>
+                                        </tr>
+                                        <tr>
+                                          <td height="23" align="left" class="fc4" style="color:#333333;cursor:hand; background-color:#FCEEFD; font-size:12px;" onclick="javascript:NavOnClick('82')">Q) After death, where will the character go?</td>
+                                        </tr>
+                                        <tr class="m1" id="itembox82" style="DISPLAY: none">
+                                          <td align="left" valign="top" class="fc4" style="color:#990000;">A: <span lang="EN-US" style="FONT-SIZE: 10.5pt; COLOR: #3366ff; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 宋体; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-bidi-font-size: 12.0pt"><strong>The character will be reincarnated in Woodlingor.</strong></span><br>
+                                          2007-02-28</td>
+                                        </tr>
+                                        <tr>
+                                          <td height="23" align="left" class="fc4" style="color:#333333;cursor:hand; background-color:#FCEEFD; font-size:12px;" onclick="javascript:NavOnClick('81')">Q) What is the highest level that a character can reach?</td>
+                                        </tr>
+                                        <tr class="m1" id="itembox81" style="DISPLAY: none">
+                                          <td align="left" valign="top" class="fc4" style="color:#990000;">A: <span lang="EN-US" style="FONT-SIZE: 10.5pt; COLOR: #3366ff; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 宋体; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-bidi-font-size: 12.0pt"><strong>The highest level a character can reach so far is level 1-124.</strong></span><br>
+                                          2007-02-28</td>
+                                        </tr>
+                                        <tr>
+                                          <td height="23" align="left" class="fc4" style="color:#333333;cursor:hand; background-color:#FCEEFD; font-size:12px;" onclick="javascript:NavOnClick('80')">Q) Where are the merchants?</td>
+                                        </tr>
+                                        <tr class="m1" id="itembox80" style="DISPLAY: none">
+                                          <td align="left" valign="top" class="fc4" style="color:#990000;">A: <span lang="EN-US" style="FONT-SIZE: 10.5pt; COLOR: #3366ff; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 宋体; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-bidi-font-size: 12.0pt"><strong>The mini-map will show all the merchants.</strong></span><br>
+                                          2007-02-28</td>
+                                        </tr>
+                                        <tr>
+                                          <td height="23" align="left" class="fc4" style="color:#333333;cursor:hand; background-color:#FCEEFD; font-size:12px;" onclick="javascript:NavOnClick('79')">Q) Where can we sell items?</td>
+                                        </tr>
+                                        <tr class="m1" id="itembox79" style="DISPLAY: none">
+                                          <td align="left" valign="top" class="fc4" style="color:#990000;">A: <span lang="EN-US" style="FONT-SIZE: 10.5pt; COLOR: #3366ff; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 宋体; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-bidi-font-size: 12.0pt"><strong>You have to visit the trading zone to sell items.</strong></span><br>
+                                          2007-02-28</td>
+                                        </tr>
+                                        <tr>
+                                          <td height="23" align="left" class="fc4" style="color:#333333;cursor:hand; background-color:#FCEEFD; font-size:12px;" onclick="javascript:NavOnClick('78')">Q) Where are the places you can buy heal or mana pots and armor?</td>
+                                        </tr>
+                                        <tr class="m1" id="itembox78" style="DISPLAY: none">
+                                          <td align="left" valign="top" class="fc4" style="color:#990000;">A: <span lang="EN-US" style="FONT-SIZE: 10.5pt; COLOR: #3366ff; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 宋体; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-bidi-font-size: 12.0pt"><strong>In every town there is a medical store and armor shop or weapon shop you will be able to buy your required armor, weapon, healing or mana pots.</strong></span><br>
+                                          2007-02-28</td>
+                                        </tr>
+                                        <tr>
+                                          <td height="23" align="left" class="fc4" style="color:#333333;cursor:hand; background-color:#FCEEFD; font-size:12px;" onclick="javascript:NavOnClick('77')">Q) Why I can’t wear my armor?</td>
+                                        </tr>
+                                        <tr class="m1" id="itembox77" style="DISPLAY: none">
+                                          <td align="left" valign="top" class="fc4" style="color:#990000;">A: <span lang="EN-US" style="FONT-SIZE: 10.5pt; COLOR: #3366ff; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 宋体; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-bidi-font-size: 12.0pt"><strong>Myth War armor is classified by different types of races, gender and required levels. You need to fit the specified requirement to be able to wear an item.</strong></span><br>
+                                          2007-02-28</td>
+                                        </tr>
+                                        <tr>
+                                          <td height="23" align="left" class="fc4" style="color:#333333;cursor:hand; background-color:#FCEEFD; font-size:12px;" onclick="javascript:NavOnClick('76')">Q) Can I use other races’ item?</td>
+                                        </tr>
+                                        <tr class="m1" id="itembox76" style="DISPLAY: none">
+                                          <td align="left" valign="top" class="fc4" style="color:#990000;">A: <span lang="EN-US" style="FONT-SIZE: 10.5pt; COLOR: #3366ff; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 宋体; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-bidi-font-size: 12.0pt"><strong>No.</strong></span><br>
+                                          2007-02-28</td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><img src="images/index_30.jpg" width="672" height="8" alt=""></td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                </tr>
+              </table>
+            </td>
+            <td width="161" valign="top" background="images/index_34.jpg"><img src="images/index1_06.jpg" width="161" height="433"></td>
+          </tr>
+          <tr>
+            <td colspan="3" valign="top">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="143">
+                    <div align="center"></div>
+                  </td>
+                  <td valign="top"><img src="images/di.jpg" width="703" height="16" alt=""></td>
+                  <td width="158">&nbsp;</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td background="images/di.gif">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="147">&nbsp;</td>
+            <td valign="top">&nbsp;</td>
+            <td width="161">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="1002">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="147" background="images/index_44.jpg">&nbsp;</td>
+            <td background="images/index_44.jpg">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td><img src="images/index_46.jpg" width="700" height="14" alt=""></td>
+                </tr>
+                <tr>
+                  <td background="images/index_48.jpg">
+                    <div align="center">
+                      <br>
+                      <span class="fc1">Copyright <span class="td2 STYLE1">&copy;</span> 2005-2006 Skyunion Co., Ltd , All Rights Reserved.</span><br>
+                      <br>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="images/index_49.jpg" width="700" height="13" alt=""></td>
+                </tr>
+              </table>
+            </td>
+            <td width="161" background="images/index_44.jpg">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+      <td background="images/index_44.jpg">&nbsp;</td>
+    </tr>
+  </table>
+</body>
+</html>

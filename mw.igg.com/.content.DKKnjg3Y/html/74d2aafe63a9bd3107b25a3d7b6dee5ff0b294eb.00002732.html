@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Internet Gaming Gate - Global Free Online Games Portal</title>
+  <meta name="description" content="Internet Gaming Gate is a free online games portal, by skyunion.">
+  <meta name="keywords" content="TOP,Talesofpirates, GodsWar Online,GW，Mythwar, Myth war online, Voyage century Online, Voyage century, Free online games, Free online game, Free 3d MMORPG, Free MMORPG, Free game, Free games, multiplayer, games,gaming, free,Online, MMORPG, pc games, magic, spells, adventure, pet, 3D, voyage, exploration, pets, 2D">
+  <link href="../themes/css/igg_2_0.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  .cp_a {
+        float:left;
+    width:30px;
+    height:30px;
+    padding-left:3px;
+    padding-top:2px;
+  }
+  </style>
+</head>
+<body>
+  <div class="eventfloat" id="e_text" style="display:none" onblur="hidden(this)"></div>
+  <div id="container">
+    <div id="he">
+      <div class="fstlogo_02"></div>
+      <div class="fstmu">
+        <div class="fstmu_03"></div>
+        <div class="fstmu_05"></div>
+        <div class="fstmu_07">
+          <div align="center" style="padding-top:10px;">
+            <span class="menu"></span>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="10%" align="center" valign="middle">
+                  <a href="/">Home</a>
+                </td>
+                <td width="10%" align="center" valign="middle">
+                  <a href="/member/reg.php">Register</a>
+                </td>
+                <td width="10%" align="center" valign="middle">
+                  <a href="/news/newslist.php">News</a>
+                </td>
+                <td width="10%" align="center" valign="middle">
+                  <a href="/support/support.php">Support</a>
+                </td>
+                <td width="14%" align="center" valign="middle">
+                  <a href="/member/actigame.php">Activation</a>
+                </td>
+                <td width="10%" align="center" valign="middle">
+                  <a href="http://rich.igg.com" target="_blank">PPS</a>
+                </td>
+                <td width="14%" align="center" valign="middle">
+                  <a href="/aboutigg/aboutigg.php">About IGG</a>
+                </td>
+                <td width="14%" align="center" valign="middle">
+                  <a href="/contactus/contactus.php">Contact us</a>
+                </td>
+                <td align="center" valign="middle">
+                  <a href="/partner/partner.php">Partners</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="fstmu_09"></div>
+      </div>
+    </div>
+    <div id="mid">
+      <div class="thd_03"></div>
+      <div class="thd_06">
+        <script src="/js/validator.js"></script>
+        <div class="left" align="center">
+          <div style="padding-top:10px;" align="center">
+            <form id="loginform" name="loginform" method="post" action="/loginprocess.php" onsubmit="return Validator.Validate(this,2)"></form>
+            <table width="210" border="0" cellspacing="0" cellpadding="0" style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; color:#FFFFFF;">
+              <tr>
+                <td width="54" align="right" valign="middle"><strong>ID&nbsp;&nbsp;</strong></td>
+                <td width="99" align="left" valign="middle"><input type="hidden" name="action" value="save"><input name="M_Name" type="text" style="width:94px;" datatype="MemberName" require="true" min="4" max="15" msg="The passport ID should only be letters, number or underline." tabindex="1"></td>
+                <td width="57" rowspan="2" align="center" valign="middle"><input type="image" name="imageField" src="/themes/images/igg_index_2_03.gif"></td>
+              </tr>
+              <tr align="left">
+                <td align="right" valign="middle"><strong>PW&nbsp;&nbsp;</strong></td>
+                <td valign="middle"><input name="M_Pass" type="password" style="width:94px" datatype="MemberName" require="true" min="1" max="14" msg="Password should be between 1-15 characters or numbers, case sensitive." tabindex="2"></td>
+              </tr>
+              <tr>
+                <td colspan="2" align="left" valign="middle">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="35%" align="right" valign="middle" style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; color:#FFFFFF;"><strong>Validate&nbsp;&nbsp;<br>
+                      Code&nbsp;&nbsp;</strong></td>
+                      <td width="37%"><input name="code" type="text" style="width:50px" maxlength="4" datatype="Limit" min="4" max="4" msg="The verification code should be 4 numbers." tabindex="3"></td>
+                      <td width="28%"><img src="/member/num.php?name=loginCode&num_cks=0fdb3855b295fae66774542a32ef8e2c" border="0" align="absmiddle" id='vCode' name='vCode' width="40" height="20"></td>
+                    </tr>
+                  </table>
+                </td>
+                <td align="center" valign="middle"><img src="../themes/images/refresh.gif" border="0" onclick="javascript:loginform.vCode.src='/member/num.php?name=loginCode&'+ Math.random();"></td>
+              </tr>
+              <tr>
+                <td height="8" colspan="3"></td>
+              </tr>
+              <tr>
+                <td align="center" valign="middle"><img src="../themes/images/igg_index_2_07.gif" border="0"></td>
+                <td colspan="2" align="left" valign="middle" class="login">
+                  <a href="/member/getpass.php">Forgot your User ID or Password?</a>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" valign="middle"><img src="../themes/images/igg_index_2_10.gif" border="0"></td>
+                <td colspan="2" align="left" valign="middle">New user? <span class="signup"><strong><a href="/member/reg.php">Sign Up now!</a></strong></span></td>
+              </tr>
+            </table>
+          </div>
+          <div class="featuregames">
+            <img src="../themes/images/featuredgames.gif" border="0">
+            <div align="center">
+              <a href="http://zu.igg.com/" target="_blank"><img src="../themes/images/zu.jpg" border="0"></a><br>
+              <a href="http://ao.igg.com/" target="_blank"><img src="../themes/images/ao_logo.jpg" border="0"></a><br>
+              <a href="http://top.igg.com/" target="_blank"><img src="../themes/images/19066top.jpg" border="0"></a><br>
+              <a href="/" target="_blank"><img src="../themes/images/19066mw.jpg" border="0"></a><br>
+              <a href="http://wl.igg.com/" target="_blank"><img src="../themes/images/wl_logo.jpg" border="0"></a><br>
+              <a href="http://gw.igg.com/" target="_blank"><img src="../themes/images/19066gw.jpg" border="0"></a>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div id="topevent">
+            <img src="../themes/images/b_event_01.gif" border="0"><img src="../themes/images/b_event_02.gif" border="0"><a href="event_top.php"><img src="../themes/images/b_event_03.gif" border="0"></a><a href="event_mw.php"><img src="../themes/images/b_event_g_04.gif" border="0"></a><a href="event_vc.php"><img src="../themes/images/b_event_g_05.gif" border="0"></a>
+            <div>
+              <div class="e03"></div>
+              <div class="e05"></div>
+              <div class="e06">
+                <div style="padding-right:15px; padding-top:10px; text-align:right; font-family:'Times New Roman', Times, serif; font-size:14px; color:#1c4677;">
+                  <strong>EST Time (GMT-5)</strong> &nbsp;&nbsp;&nbsp;&nbsp;<span id="clock"></span>&nbsp;&nbsp;&nbsp;<span id="time"></span>
+                </div>
+              </div>
+              <script language="JavaScript1.2" type="text/javascript">
+              var clock_month = new Array("","JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC");
+              var clock_day = new Array("",31,28,31,30,31,30,31,31,30,31,30,31);
+
+              var clock_arrDate = new Array(2007,12,30,4,53,59);
+
+              var clock_years = clock_arrDate[0];
+              var clock_months= clock_arrDate[1];
+              var clock_days  = clock_arrDate[2];
+              var clock_hrs = clock_arrDate[3];
+              var clock_min = clock_arrDate[4];
+              var clock_sec = clock_arrDate[5];
+              var clock_datecol = "-";
+              var clock_timecol = ":";
+
+              var monthname = clock_month[clock_months];
+
+              function THINPIGServerTime()
+              {
+              var addMonth=false;
+
+              //second
+              clock_arrDate[5]+=1;
+              clock_sec = clock_arrDate[5];
+              if (clock_sec==60)
+              {
+              clock_arrDate[5]=0;
+              clock_sec=0;
+
+              //mintue
+              clock_arrDate[4]+=1;
+              clock_min = clock_arrDate[4];
+              if (clock_min==60)
+              {
+               clock_arrDate[4]=0;
+                   clock_min = 0;
+
+              //hour
+                   clock_arrDate[3]+=1;
+                   clock_hrs = clock_arrDate[3];
+
+                   if (clock_hrs==24)
+                   {
+                       clock_arrDate[3]=0;
+                           clock_hrs=0;
+
+                           //day
+                           clock_arrDate[2]+=1;
+                           clock_days = clock_arrDate[2];
+                           if (clock_days>clock_day[clock_months])
+                           {
+                               if (clock_months==2)
+                               {
+                                       if (clock_years%4==0 && clock_years%400!=0)
+                                       {
+                                               if ((clock_days+1)>clock_day[clock_months])
+                                               {
+                                                       clock_arrDate[2]=1;
+                                                           clock_days=1;
+                                                           addMonth =true;
+                                               }
+                                       }
+                               }else{
+                                       clock_arrDate[2]=1;
+                                           clock_days=1;
+                                           addMonth =true;
+                                   }
+
+                                   if (addMonth==true)
+                                   {
+                                       clock_arrDate[1]+=1;
+                                           clock_months = clock_arrDate[1];
+                                           if (clock_months>12)
+                                           {
+                                               clock_months=1;
+                                                   addDate[1]=1;
+
+                                                   //year
+                                                   clock_arrDate[0]+=1;
+                                                   years = clock_arrDate[0];
+                                           }
+
+                                           monthname = clock_month[clock_months];
+                                   }
+                           }
+                   }
+
+              }
+              }
+
+              document.getElementById("clock").innerHTML = monthname + clock_datecol + clock_days;
+              if (clock_hrs<12){
+              document.getElementById("time").innerHTML =   clock_hrs + clock_timecol + clock_min + clock_timecol + clock_sec + "AM";
+              }else{
+              clock_hrs = clock_hrs-12;
+              document.getElementById("time").innerHTML =   clock_hrs + clock_timecol + clock_min + clock_timecol + clock_sec + "PM";
+              }
+              }
+
+              setInterval("THINPIGServerTime()", 1000);
+              </script>
+              <div class="e09">
+                <div class="e07">
+                  <div style="padding:10px;">
+                    <table width="614" border="0" cellpadding="0" cellspacing="1" bgcolor="#FFFFFF">
+                      <tr class="week">
+                        <td width="86" height="30" align="center" valign="middle" bgcolor="#F09A00" class="week">Sun.</td>
+                        <td width="86" align="center" valign="middle" bgcolor="#F09A00">Mon.</td>
+                        <td width="87" align="center" valign="middle" bgcolor="#F09A00">Tues.</td>
+                        <td width="87" align="center" valign="middle" bgcolor="#F09A00">Wed.</td>
+                        <td width="86" align="center" valign="middle" bgcolor="#F09A00">Thu.</td>
+                        <td width="86" align="center" valign="middle" bgcolor="#F09A00">Fri.</td>
+                        <td align="center" valign="middle" bgcolor="#F09A00">Sat.</td>
+                      </tr>
+                      <tr>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">&nbsp;</td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">&nbsp;</td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">&nbsp;</td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">&nbsp;</td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">&nbsp;</td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">&nbsp;</td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">1</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="right" valign="top" width="69" height="67" style="border:1px solid #FFFFFF;">
+                                      <div class="cp_a">
+                                        <span id="ts_27" style="display:none">Horrific will attack our city, we need warriors to save our city.<br>
+                                        <br>
+                                        Please check our website for the detailed information of monster attack.</span> <a href="#" onclick="return dispEvent(this,27)"><img src="/themes/images/event/20070613004839430.jpg" border="0" title="Monsters attack"></a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">2</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle"></td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">3</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="right" valign="top" width="69" height="67" style="border:1px solid #FFFFFF;">
+                                      <div class="cp_a">
+                                        <span id="ts_20" style="display:none">ewSail to the sea and collect some see goods for exchanging with GM.<br>
+                                        <br>
+                                        Each Monday on the First and Third week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Penguin Isle<br>
+                                        <br>
+                                        Each Monday on the Second and Fourth week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Rainbow Isle</span> <a href="#" onclick="return dispEvent(this,20)"><img src="/themes/images/event/20070613002120957.jpg" border="0" title="Sea Goods Exchange"></a>
+                                      </div>
+                                      <div class="cp_a">
+                                        <span id="ts_35" style="display:none">Have you collected dozens of May Day Cards? Do you want to find GM to exchange for surprise? Today, you can exchange them with special gifts.<br>
+                                        <br>
+                                        Each Monday on the First and Thrid week of every month<br>
+                                        EST (GMT-4) 09:00 a.m. Rainbow Isle<br>
+                                        EST (GMT-4) 10:30 a.m. Mermaid Isle<br>
+                                        <br>
+                                        Each Monday on the Second and Fourth week of every month<br>
+                                        EST (GMT-4) 09:00 a.m. Penguin Isle<br>
+                                        EST (GMT-4) 10:30 a.m. Treasure Isle<br></span> <a href="#" onclick="return dispEvent(this,35)"><img src="/themes/images/event/20070613040028278.gif" border="0" title="May Day Card"></a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">4</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="right" valign="top" width="69" height="67" style="border:1px solid #FFFFFF;">
+                                      <div class="cp_a">
+                                        <span id="ts_21" style="display:none">Sail to the sea and collect some see goods for exchanging with GM.<br>
+                                        <br>
+                                        Each Tuesday on the First and Third week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Treasure Isle<br>
+                                        EST (GMT-4) 22:30 p.m. Skull Isle<br>
+                                        <br>
+                                        Each Tuesday on the Second and Fourth week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Mermaid Isle<br>
+                                        EST (GMT-4) 22:30 p.m. Coral Isle</span> <a href="#" onclick="return dispEvent(this,21)"><img src="/themes/images/event/20070613002120957.jpg" border="0" title="Sea Goods Exchange"></a>
+                                      </div>
+                                      <div class="cp_a">
+                                        <span id="ts_38" style="display:none">Have you collected dozens of May Day Cards? Do you want to find GM to exchange for surprise? Today, you can exchange them with special gifts.<br>
+                                        <br>
+                                        Each Tuesday on the First and Third week of every month<br>
+                                        ET (GMT-4) 12:00 a.m. Coral Isle<br>
+                                        <br>
+                                        Each Tuesday on the Second and Fourth week of every month<br>
+                                        ET (GMT-4) 12:00 a.m. Skull Isle<br></span> <a href="#" onclick="return dispEvent(this,38)"><img src="/themes/images/event/20070613040028278.gif" border="0" title="May Day Card"></a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">5</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="right" valign="top" width="69" height="67" style="border:1px solid #FFFFFF;">
+                                      <div class="cp_a">
+                                        <span id="ts_36" style="display:none">Playing hide and seek with GM, the one who find GM will get the prize: one Mini Amplifier of Strive<br>
+                                        <br>
+                                        Each Wednesday on the First and Third week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Rainbow Isle<br>
+                                        EST (GMT-4) 22:30 p.m. Mermaid Isle<br>
+                                        <br>
+                                        Each Wednesday on the Second and Fourth week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Penguin Isle<br>
+                                        EST (GMT-4) 22:30 p.m. Treasure Isle<br>
+                                        <br></span> <a href="#" onclick="return dispEvent(this,36)"><img src="/themes/images/event/20070613004104952.jpg" border="0" title="Hide & Seek"></a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">6</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="right" valign="top" width="69" height="67" style="border:1px solid #FFFFFF;">
+                                      <div class="cp_a">
+                                        <span id="ts_24" style="display:none">Playing hide and seek with GM, the one who find GM will get the prize: one Mini Amplifier of Strive<br>
+                                        <br>
+                                        Each Thursday on the First and Third week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Coral Isle<br>
+                                        <br>
+                                        Each Thursday on the First and Third week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Skull Isle<br></span> <a href="#" onclick="return dispEvent(this,24)"><img src="/themes/images/event/20070613004104952.jpg" border="0" title="Hide & Seek"></a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">7</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="right" valign="top" width="69" height="67" style="border:1px solid #FFFFFF;">
+                                      <div class="cp_a">
+                                        <span id="ts_26" style="display:none">Horrific will attack our city, we need warriors to save our city.<br>
+                                        <br>
+                                        Please check our website for the detailed information of monster attack.<br>
+                                        <br></span> <a href="#" onclick="return dispEvent(this,26)"><img src="/themes/images/event/20070613004839430.jpg" border="0" title="Monsters attack"></a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">8</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="right" valign="top" width="69" height="67" style="border:1px solid #FFFFFF;">
+                                      <div class="cp_a">
+                                        <span id="ts_27" style="display:none">Horrific will attack our city, we need warriors to save our city.<br>
+                                        <br>
+                                        Please check our website for the detailed information of monster attack.</span> <a href="#" onclick="return dispEvent(this,27)"><img src="/themes/images/event/20070613004839430.jpg" border="0" title="Monsters attack"></a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">9</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle"></td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">10</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="right" valign="top" width="69" height="67" style="border:1px solid #FFFFFF;">
+                                      <div class="cp_a">
+                                        <span id="ts_20" style="display:none">ewSail to the sea and collect some see goods for exchanging with GM.<br>
+                                        <br>
+                                        Each Monday on the First and Third week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Penguin Isle<br>
+                                        <br>
+                                        Each Monday on the Second and Fourth week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Rainbow Isle</span> <a href="#" onclick="return dispEvent(this,20)"><img src="/themes/images/event/20070613002120957.jpg" border="0" title="Sea Goods Exchange"></a>
+                                      </div>
+                                      <div class="cp_a">
+                                        <span id="ts_35" style="display:none">Have you collected dozens of May Day Cards? Do you want to find GM to exchange for surprise? Today, you can exchange them with special gifts.<br>
+                                        <br>
+                                        Each Monday on the First and Thrid week of every month<br>
+                                        EST (GMT-4) 09:00 a.m. Rainbow Isle<br>
+                                        EST (GMT-4) 10:30 a.m. Mermaid Isle<br>
+                                        <br>
+                                        Each Monday on the Second and Fourth week of every month<br>
+                                        EST (GMT-4) 09:00 a.m. Penguin Isle<br>
+                                        EST (GMT-4) 10:30 a.m. Treasure Isle<br></span> <a href="#" onclick="return dispEvent(this,35)"><img src="/themes/images/event/20070613040028278.gif" border="0" title="May Day Card"></a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">11</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="right" valign="top" width="69" height="67" style="border:1px solid #FFFFFF;">
+                                      <div class="cp_a">
+                                        <span id="ts_21" style="display:none">Sail to the sea and collect some see goods for exchanging with GM.<br>
+                                        <br>
+                                        Each Tuesday on the First and Third week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Treasure Isle<br>
+                                        EST (GMT-4) 22:30 p.m. Skull Isle<br>
+                                        <br>
+                                        Each Tuesday on the Second and Fourth week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Mermaid Isle<br>
+                                        EST (GMT-4) 22:30 p.m. Coral Isle</span> <a href="#" onclick="return dispEvent(this,21)"><img src="/themes/images/event/20070613002120957.jpg" border="0" title="Sea Goods Exchange"></a>
+                                      </div>
+                                      <div class="cp_a">
+                                        <span id="ts_38" style="display:none">Have you collected dozens of May Day Cards? Do you want to find GM to exchange for surprise? Today, you can exchange them with special gifts.<br>
+                                        <br>
+                                        Each Tuesday on the First and Third week of every month<br>
+                                        ET (GMT-4) 12:00 a.m. Coral Isle<br>
+                                        <br>
+                                        Each Tuesday on the Second and Fourth week of every month<br>
+                                        ET (GMT-4) 12:00 a.m. Skull Isle<br></span> <a href="#" onclick="return dispEvent(this,38)"><img src="/themes/images/event/20070613040028278.gif" border="0" title="May Day Card"></a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">12</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="right" valign="top" width="69" height="67" style="border:1px solid #FFFFFF;">
+                                      <div class="cp_a">
+                                        <span id="ts_36" style="display:none">Playing hide and seek with GM, the one who find GM will get the prize: one Mini Amplifier of Strive<br>
+                                        <br>
+                                        Each Wednesday on the First and Third week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Rainbow Isle<br>
+                                        EST (GMT-4) 22:30 p.m. Mermaid Isle<br>
+                                        <br>
+                                        Each Wednesday on the Second and Fourth week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Penguin Isle<br>
+                                        EST (GMT-4) 22:30 p.m. Treasure Isle<br>
+                                        <br></span> <a href="#" onclick="return dispEvent(this,36)"><img src="/themes/images/event/20070613004104952.jpg" border="0" title="Hide & Seek"></a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">13</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="right" valign="top" width="69" height="67" style="border:1px solid #FFFFFF;">
+                                      <div class="cp_a">
+                                        <span id="ts_24" style="display:none">Playing hide and seek with GM, the one who find GM will get the prize: one Mini Amplifier of Strive<br>
+                                        <br>
+                                        Each Thursday on the First and Third week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Coral Isle<br>
+                                        <br>
+                                        Each Thursday on the First and Third week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Skull Isle<br></span> <a href="#" onclick="return dispEvent(this,24)"><img src="/themes/images/event/20070613004104952.jpg" border="0" title="Hide & Seek"></a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">14</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="right" valign="top" width="69" height="67" style="border:1px solid #FFFFFF;">
+                                      <div class="cp_a">
+                                        <span id="ts_26" style="display:none">Horrific will attack our city, we need warriors to save our city.<br>
+                                        <br>
+                                        Please check our website for the detailed information of monster attack.<br>
+                                        <br></span> <a href="#" onclick="return dispEvent(this,26)"><img src="/themes/images/event/20070613004839430.jpg" border="0" title="Monsters attack"></a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">15</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="right" valign="top" width="69" height="67" style="border:1px solid #FFFFFF;">
+                                      <div class="cp_a">
+                                        <span id="ts_27" style="display:none">Horrific will attack our city, we need warriors to save our city.<br>
+                                        <br>
+                                        Please check our website for the detailed information of monster attack.</span> <a href="#" onclick="return dispEvent(this,27)"><img src="/themes/images/event/20070613004839430.jpg" border="0" title="Monsters attack"></a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">16</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle"></td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">17</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="right" valign="top" width="69" height="67" style="border:1px solid #FFFFFF;">
+                                      <div class="cp_a">
+                                        <span id="ts_20" style="display:none">ewSail to the sea and collect some see goods for exchanging with GM.<br>
+                                        <br>
+                                        Each Monday on the First and Third week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Penguin Isle<br>
+                                        <br>
+                                        Each Monday on the Second and Fourth week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Rainbow Isle</span> <a href="#" onclick="return dispEvent(this,20)"><img src="/themes/images/event/20070613002120957.jpg" border="0" title="Sea Goods Exchange"></a>
+                                      </div>
+                                      <div class="cp_a">
+                                        <span id="ts_35" style="display:none">Have you collected dozens of May Day Cards? Do you want to find GM to exchange for surprise? Today, you can exchange them with special gifts.<br>
+                                        <br>
+                                        Each Monday on the First and Thrid week of every month<br>
+                                        EST (GMT-4) 09:00 a.m. Rainbow Isle<br>
+                                        EST (GMT-4) 10:30 a.m. Mermaid Isle<br>
+                                        <br>
+                                        Each Monday on the Second and Fourth week of every month<br>
+                                        EST (GMT-4) 09:00 a.m. Penguin Isle<br>
+                                        EST (GMT-4) 10:30 a.m. Treasure Isle<br></span> <a href="#" onclick="return dispEvent(this,35)"><img src="/themes/images/event/20070613040028278.gif" border="0" title="May Day Card"></a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">18</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="right" valign="top" width="69" height="67" style="border:1px solid #FFFFFF;">
+                                      <div class="cp_a">
+                                        <span id="ts_21" style="display:none">Sail to the sea and collect some see goods for exchanging with GM.<br>
+                                        <br>
+                                        Each Tuesday on the First and Third week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Treasure Isle<br>
+                                        EST (GMT-4) 22:30 p.m. Skull Isle<br>
+                                        <br>
+                                        Each Tuesday on the Second and Fourth week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Mermaid Isle<br>
+                                        EST (GMT-4) 22:30 p.m. Coral Isle</span> <a href="#" onclick="return dispEvent(this,21)"><img src="/themes/images/event/20070613002120957.jpg" border="0" title="Sea Goods Exchange"></a>
+                                      </div>
+                                      <div class="cp_a">
+                                        <span id="ts_38" style="display:none">Have you collected dozens of May Day Cards? Do you want to find GM to exchange for surprise? Today, you can exchange them with special gifts.<br>
+                                        <br>
+                                        Each Tuesday on the First and Third week of every month<br>
+                                        ET (GMT-4) 12:00 a.m. Coral Isle<br>
+                                        <br>
+                                        Each Tuesday on the Second and Fourth week of every month<br>
+                                        ET (GMT-4) 12:00 a.m. Skull Isle<br></span> <a href="#" onclick="return dispEvent(this,38)"><img src="/themes/images/event/20070613040028278.gif" border="0" title="May Day Card"></a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">19</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="right" valign="top" width="69" height="67" style="border:1px solid #FFFFFF;">
+                                      <div class="cp_a">
+                                        <span id="ts_36" style="display:none">Playing hide and seek with GM, the one who find GM will get the prize: one Mini Amplifier of Strive<br>
+                                        <br>
+                                        Each Wednesday on the First and Third week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Rainbow Isle<br>
+                                        EST (GMT-4) 22:30 p.m. Mermaid Isle<br>
+                                        <br>
+                                        Each Wednesday on the Second and Fourth week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Penguin Isle<br>
+                                        EST (GMT-4) 22:30 p.m. Treasure Isle<br>
+                                        <br></span> <a href="#" onclick="return dispEvent(this,36)"><img src="/themes/images/event/20070613004104952.jpg" border="0" title="Hide & Seek"></a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">20</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="right" valign="top" width="69" height="67" style="border:1px solid #FFFFFF;">
+                                      <div class="cp_a">
+                                        <span id="ts_24" style="display:none">Playing hide and seek with GM, the one who find GM will get the prize: one Mini Amplifier of Strive<br>
+                                        <br>
+                                        Each Thursday on the First and Third week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Coral Isle<br>
+                                        <br>
+                                        Each Thursday on the First and Third week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Skull Isle<br></span> <a href="#" onclick="return dispEvent(this,24)"><img src="/themes/images/event/20070613004104952.jpg" border="0" title="Hide & Seek"></a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">21</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="right" valign="top" width="69" height="67" style="border:1px solid #FFFFFF;">
+                                      <div class="cp_a">
+                                        <span id="ts_26" style="display:none">Horrific will attack our city, we need warriors to save our city.<br>
+                                        <br>
+                                        Please check our website for the detailed information of monster attack.<br>
+                                        <br></span> <a href="#" onclick="return dispEvent(this,26)"><img src="/themes/images/event/20070613004839430.jpg" border="0" title="Monsters attack"></a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">22</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="right" valign="top" width="69" height="67" style="border:1px solid #FFFFFF;">
+                                      <div class="cp_a">
+                                        <span id="ts_27" style="display:none">Horrific will attack our city, we need warriors to save our city.<br>
+                                        <br>
+                                        Please check our website for the detailed information of monster attack.</span> <a href="#" onclick="return dispEvent(this,27)"><img src="/themes/images/event/20070613004839430.jpg" border="0" title="Monsters attack"></a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">23</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle"></td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">24</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="right" valign="top" width="69" height="67" style="border:1px solid #FFFFFF;">
+                                      <div class="cp_a">
+                                        <span id="ts_20" style="display:none">ewSail to the sea and collect some see goods for exchanging with GM.<br>
+                                        <br>
+                                        Each Monday on the First and Third week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Penguin Isle<br>
+                                        <br>
+                                        Each Monday on the Second and Fourth week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Rainbow Isle</span> <a href="#" onclick="return dispEvent(this,20)"><img src="/themes/images/event/20070613002120957.jpg" border="0" title="Sea Goods Exchange"></a>
+                                      </div>
+                                      <div class="cp_a">
+                                        <span id="ts_35" style="display:none">Have you collected dozens of May Day Cards? Do you want to find GM to exchange for surprise? Today, you can exchange them with special gifts.<br>
+                                        <br>
+                                        Each Monday on the First and Thrid week of every month<br>
+                                        EST (GMT-4) 09:00 a.m. Rainbow Isle<br>
+                                        EST (GMT-4) 10:30 a.m. Mermaid Isle<br>
+                                        <br>
+                                        Each Monday on the Second and Fourth week of every month<br>
+                                        EST (GMT-4) 09:00 a.m. Penguin Isle<br>
+                                        EST (GMT-4) 10:30 a.m. Treasure Isle<br></span> <a href="#" onclick="return dispEvent(this,35)"><img src="/themes/images/event/20070613040028278.gif" border="0" title="May Day Card"></a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">25</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="right" valign="top" width="69" height="67" style="border:1px solid #FFFFFF;">
+                                      <div class="cp_a">
+                                        <span id="ts_21" style="display:none">Sail to the sea and collect some see goods for exchanging with GM.<br>
+                                        <br>
+                                        Each Tuesday on the First and Third week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Treasure Isle<br>
+                                        EST (GMT-4) 22:30 p.m. Skull Isle<br>
+                                        <br>
+                                        Each Tuesday on the Second and Fourth week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Mermaid Isle<br>
+                                        EST (GMT-4) 22:30 p.m. Coral Isle</span> <a href="#" onclick="return dispEvent(this,21)"><img src="/themes/images/event/20070613002120957.jpg" border="0" title="Sea Goods Exchange"></a>
+                                      </div>
+                                      <div class="cp_a">
+                                        <span id="ts_38" style="display:none">Have you collected dozens of May Day Cards? Do you want to find GM to exchange for surprise? Today, you can exchange them with special gifts.<br>
+                                        <br>
+                                        Each Tuesday on the First and Third week of every month<br>
+                                        ET (GMT-4) 12:00 a.m. Coral Isle<br>
+                                        <br>
+                                        Each Tuesday on the Second and Fourth week of every month<br>
+                                        ET (GMT-4) 12:00 a.m. Skull Isle<br></span> <a href="#" onclick="return dispEvent(this,38)"><img src="/themes/images/event/20070613040028278.gif" border="0" title="May Day Card"></a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">26</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="right" valign="top" width="69" height="67" style="border:1px solid #FFFFFF;">
+                                      <div class="cp_a">
+                                        <span id="ts_36" style="display:none">Playing hide and seek with GM, the one who find GM will get the prize: one Mini Amplifier of Strive<br>
+                                        <br>
+                                        Each Wednesday on the First and Third week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Rainbow Isle<br>
+                                        EST (GMT-4) 22:30 p.m. Mermaid Isle<br>
+                                        <br>
+                                        Each Wednesday on the Second and Fourth week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Penguin Isle<br>
+                                        EST (GMT-4) 22:30 p.m. Treasure Isle<br>
+                                        <br></span> <a href="#" onclick="return dispEvent(this,36)"><img src="/themes/images/event/20070613004104952.jpg" border="0" title="Hide & Seek"></a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">27</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="right" valign="top" width="69" height="67" style="border:1px solid #FFFFFF;">
+                                      <div class="cp_a">
+                                        <span id="ts_24" style="display:none">Playing hide and seek with GM, the one who find GM will get the prize: one Mini Amplifier of Strive<br>
+                                        <br>
+                                        Each Thursday on the First and Third week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Coral Isle<br>
+                                        <br>
+                                        Each Thursday on the First and Third week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Skull Isle<br></span> <a href="#" onclick="return dispEvent(this,24)"><img src="/themes/images/event/20070613004104952.jpg" border="0" title="Hide & Seek"></a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">28</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="right" valign="top" width="69" height="67" style="border:1px solid #FFFFFF;">
+                                      <div class="cp_a">
+                                        <span id="ts_26" style="display:none">Horrific will attack our city, we need warriors to save our city.<br>
+                                        <br>
+                                        Please check our website for the detailed information of monster attack.<br>
+                                        <br></span> <a href="#" onclick="return dispEvent(this,26)"><img src="/themes/images/event/20070613004839430.jpg" border="0" title="Monsters attack"></a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">29</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="right" valign="top" width="69" height="67" style="border:1px solid #FFFFFF;">
+                                      <div class="cp_a">
+                                        <span id="ts_27" style="display:none">Horrific will attack our city, we need warriors to save our city.<br>
+                                        <br>
+                                        Please check our website for the detailed information of monster attack.</span> <a href="#" onclick="return dispEvent(this,27)"><img src="/themes/images/event/20070613004839430.jpg" border="0" title="Monsters attack"></a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="100" align="center" valign="top" bgcolor="#B3CEE3">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">30</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle"></td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">
+                          <table width="83" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="40" height="30" align="center" valign="middle" class="day">31</td>
+                              <td width="40" align="center" valign="middle">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="right" valign="middle">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="right" valign="top" width="69" height="67" style="border:1px solid #FFFFFF;">
+                                      <div class="cp_a">
+                                        <span id="ts_20" style="display:none">ewSail to the sea and collect some see goods for exchanging with GM.<br>
+                                        <br>
+                                        Each Monday on the First and Third week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Penguin Isle<br>
+                                        <br>
+                                        Each Monday on the Second and Fourth week of every month<br>
+                                        EST (GMT-4) 21:00 p.m. Rainbow Isle</span> <a href="#" onclick="return dispEvent(this,20)"><img src="/themes/images/event/20070613002120957.jpg" border="0" title="Sea Goods Exchange"></a>
+                                      </div>
+                                      <div class="cp_a">
+                                        <span id="ts_35" style="display:none">Have you collected dozens of May Day Cards? Do you want to find GM to exchange for surprise? Today, you can exchange them with special gifts.<br>
+                                        <br>
+                                        Each Monday on the First and Thrid week of every month<br>
+                                        EST (GMT-4) 09:00 a.m. Rainbow Isle<br>
+                                        EST (GMT-4) 10:30 a.m. Mermaid Isle<br>
+                                        <br>
+                                        Each Monday on the Second and Fourth week of every month<br>
+                                        EST (GMT-4) 09:00 a.m. Penguin Isle<br>
+                                        EST (GMT-4) 10:30 a.m. Treasure Isle<br></span> <a href="#" onclick="return dispEvent(this,35)"><img src="/themes/images/event/20070613040028278.gif" border="0" title="May Day Card"></a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">&nbsp;</td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">&nbsp;</td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">&nbsp;</td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">&nbsp;</td>
+                        <td height="100" align="center" valign="top" bgcolor="#E1ECF4">&nbsp;</td>
+                      </tr>
+                    </table>
+                    <table width="614" border="0" cellspacing="1" cellpadding="0" style="padding:2px;">
+                      <tr bgcolor="#B3CEE3">
+                        <td width="120" align="center" valign="top">
+                          <strong>Last Month</strong><br>
+                          <a href="?year=2007&month=11"><img src="../themes/images/premonth.gif" border="0"></a>
+                        </td>
+                        <td align="center" valign="top" style="padding:2px;">
+                          <table width="99%" border="0" cellspacing="1" cellpadding="0">
+                            <tr>
+                              <td width="33%" align="center" valign="middle" bgcolor="#FFFFFF">
+                                <a href="?month=1">January</a>
+                              </td>
+                              <td width="33%" align="center" valign="middle" bgcolor="#FFFFFF">
+                                <a href="?month=2">February</a>
+                              </td>
+                              <td align="center" valign="middle" bgcolor="#FFFFFF">
+                                <a href="?month=3">March</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="middle" bgcolor="#FFFFFF">
+                                <a href="?month=4">April</a>
+                              </td>
+                              <td align="center" valign="middle" bgcolor="#FFFFFF">
+                                <a href="?month=5">May</a>
+                              </td>
+                              <td align="center" valign="middle" bgcolor="#FFFFFF">
+                                <a href="?month=6">June</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="middle" bgcolor="#FFFFFF">
+                                <a href="?month=7">July</a>
+                              </td>
+                              <td align="center" valign="middle" bgcolor="#FFFFFF">
+                                <a href="?month=8">August</a>
+                              </td>
+                              <td align="center" valign="middle" bgcolor="#FFFFFF">
+                                <a href="?month=9">September</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="middle" bgcolor="#FFFFFF">
+                                <a href="?month=10">October</a>
+                              </td>
+                              <td align="center" valign="middle" bgcolor="#FFFFFF">
+                                <a href="?month=11">November</a>
+                              </td>
+                              <td align="center" valign="middle" bgcolor="#FFFFFF">
+                                <a href="?month=12">December</a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td width="120" align="center" valign="top">
+                          <strong>Next Month</strong><br>
+                          <a href="?year=2008&month=1"><img src="../themes/images/nextmonth.gif" border="0"></a>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="e11"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="thd_08"></div>
+      <div class="thd_10"></div>
+    </div>
+    <div class="clear"></div>
+    <div id="footer">
+      <div class="fst_48"></div>
+      <div class="fst_50">
+        <a href="http://zu.igg.com" target="_blank"><img src="/themes/images/igg_index_2_zulogo.gif" border="0"></a> <a href="http://ao.igg.com" target="_blank"><img src="/themes/images/ao.gif" border="0"></a> <a href="http://top.igg.com" target="_blank"><img src="/themes/images/igg_index_2_62.gif" border="0"></a> <a href="/" target="_blank"><img src="/themes/images/igg_index_2_67.gif" border="0"></a> <a href="http://vc.igg.com" target="_blank"><img src="/themes/images/igg_index_2_69.gif" border="0"></a> <a href="http://wl.igg.com" target="_blank"><img src="/themes/images/wl.gif" border="0"></a> <a href="http://gw.igg.com" target="_blank"><img src="/themes/images/igg_index_2_65.gif" border="0"></a>
+      </div>
+      <div class="fst_52"></div>
+      <div align="center" style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; color:#8499a0; margin-top:5px; padding-top:5px; padding-bottom:15px; border-top:solid; border-top-width:1px; border-top-color:#b7c8ce;">
+        Copyright &copy; 2006 -2007 <span style="color:#414c4f;">Skyunion Co., Ltd,</span> All Rights Reserved. <span style="color:#414c4f;"><a href="/contactus/contactus.php">Contact Us</a></span>
+      </div>
+    </div>
+  </div>
+  <script>
+  function hidden(es){
+    es.style.display = 'none';
+  }
+  function dispEvent(obj,id){
+    var es = document.getElementById('e_text');
+    
+    var xy = getXY(obj);
+    xy.top += obj.offsetHeight;
+    es.style.left = xy.left;
+    es.style.top = xy.top;
+    var sur = document.getElementById('ts_'+id);
+    var st = '<input id="fu" type="text" onblur="hidden(document.getElementById(\'e_text\'))" style="width:0px;height:0px;">';
+    es.innerHTML = sur.innerHTML;
+    es.style.display = '';
+    if (sur.textContent){
+        es.style.left = xy.left+'px';
+        es.style.top = xy.top+'px';
+        es.innerHTML = es.innerHTML + st;
+        es = document.getElementById('fu')
+    }
+    es.focus();
+    return false;
+  }
+  function getXY(obj){
+    var vleft = obj.offsetLeft;
+    var vtop = obj.offsetTop;
+    while (obj = obj.offsetParent){
+        vleft += obj.offsetLeft;
+        vtop += obj.offsetTop;
+        
+    }
+    return {left:vleft,top:vtop};
+  }
+
+  </script>
+</body>
+</html>
